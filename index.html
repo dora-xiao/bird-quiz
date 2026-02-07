@@ -299,7 +299,7 @@
 
         revealBtn.addEventListener("click", () => {
             if (!revealed) {
-                trackName.textContent = currentTrack;
+                trackName.textContent = currentTrack.replace(".mp3", "").replace(/_(\d+)$/, " ($1)").replace(/_/g, " ");
                 revealBtn.textContent = "Next";
                 revealed = true;
             } else {

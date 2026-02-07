@@ -8,9 +8,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
         /* ===== Base ===== */
-        *, *::before, *::after { box-sizing: border-box; }
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
 
-        html, body {
+        html,
+        body {
             height: 100%;
             margin: 0;
             background: #1c1c2a;
@@ -157,7 +162,7 @@
 
         #birdImage {
             width: 100%;
-            height: 300px; 
+            height: 300px;
             border-radius: 16px;
             object-fit: contain;
             background: #1c1c2a;
@@ -188,7 +193,17 @@
     <script>
         const BASE_URL = "https://dora-xiao.github.io/bird-quiz/";
         const GROUPS = ["group_1", "group_2"];
-        let tracks = [], groups = {}, currentTrack = null, revealed = false, openGroups = new Set(), settingsOpen = false;
+
+        let tracks = [],
+            groups = {},
+            currentTrack = null,
+            revealed = false,
+            openGroups = new Set(),
+            settingsOpen = false;
+
+        // NEW: queue + recent history
+        let queue = [];
+        let recent = [];
 
         // Elements
         const settingsPage = document.getElementById("settings-page");
@@ -197,6 +212,15 @@
         const revealBtn = document.getElementById("revealBtn");
         const trackName = document.getElementById("trackName");
         const panel = settingsPage.querySelector(".settings-panel");
+
+        function shuffle(arr) {
+            const copy = arr.slice();
+            for (let i = copy.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [copy[i], copy[j]] = [copy[j], copy[i]];
+            }
+            return copy;
+        }
 
         // ----- Persistence -----
         function saveSelections() {
@@ -210,9 +234,7 @@
                 for (const g in parsed) {
                     if (groups[g]) {
                         groups[g].forEach((bird, i) => {
-                            if (parsed[g][i]) {
-                                bird.selected = parsed[g][i].selected;
-                            }
+                            if (parsed[g][i]) bird.selected = parsed[g][i].selected;
                         });
                     }
                 }
@@ -235,12 +257,12 @@
             refreshSettings();
             revealBtn.disabled = false;
             revealBtn.textContent = "Reveal";
-            pickRandomTrack(false);
+            pickRandomTrack();
         }
 
         function parseDisplayName(filename) {
             const parts = filename.split("_");
-            parts.pop(); // remove trailing index
+            parts.pop();
             return parts.map(w => w[0].toUpperCase() + w.slice(1)).join(" ");
         }
 
@@ -248,27 +270,29 @@
             tracks = [];
             for (const birds of Object.values(groups)) {
                 for (const bird of birds) {
-                    if (bird.selected) {
-                        tracks.push(bird);
-                    }
+                    if (bird.selected) tracks.push(bird);
                 }
             }
+            queue = shuffle(tracks);
         }
 
         function pickRandomTrack() {
             if (!tracks.length) return;
 
-            let next;
-            do {
-                next = tracks[Math.floor(Math.random() * tracks.length)];
-            } while (next === currentTrack && tracks.length > 1);
+            if (!queue.length) {
+                const eligible = tracks.filter(t => !recent.includes(t));
+                queue = shuffle(eligible.length ? eligible : tracks);
+            }
 
-            currentTrack = next;
-            birdImage.src = `${BASE_URL}${findGroupOfBird(next)}/images/${next.filename}.jpg`;
+            currentTrack = queue.shift();
+            birdImage.src = `${BASE_URL}${findGroupOfBird(currentTrack)}/images/${currentTrack.filename}.jpg`;
 
             trackName.innerHTML = "";
             revealed = false;
             revealBtn.textContent = "Reveal";
+
+            recent.push(currentTrack);
+            if (recent.length > 3) recent.shift();
         }
 
         function findGroupOfBird(bird) {
@@ -290,7 +314,7 @@
             }
         });
 
-        // ----- Settings UI -----
+        // ----- Settings UI (unchanged) -----
         function refreshSettings() {
             panel.querySelectorAll(".group-select").forEach(el => el.remove());
             for (const [groupName, birds] of Object.entries(groups)) {
@@ -310,14 +334,24 @@
                     open ? openGroups.delete(groupName) : openGroups.add(groupName);
                 };
 
-                options.appendChild(makeControl("Select all", () => { birds.forEach(b => b.selected = true); rebuildTracks(); saveSelections(); refreshSettings(); }));
-                options.appendChild(makeControl("Deselect all", () => { birds.forEach(b => b.selected = false); rebuildTracks(); saveSelections(); refreshSettings(); }));
+                options.appendChild(makeControl("Select all", () => {
+                    birds.forEach(b => b.selected = true);
+                    rebuildTracks(); saveSelections(); refreshSettings();
+                }));
+
+                options.appendChild(makeControl("Deselect all", () => {
+                    birds.forEach(b => b.selected = false);
+                    rebuildTracks(); saveSelections(); refreshSettings();
+                }));
 
                 birds.forEach(bird => {
                     const opt = document.createElement("div");
                     opt.className = "option";
                     opt.innerHTML = `<i class="fa-${bird.selected ? "solid" : "regular"} fa-square-check"></i>${bird.display_name}`;
-                    opt.onclick = () => { bird.selected = !bird.selected; rebuildTracks(); saveSelections(); refreshSettings(); };
+                    opt.onclick = () => {
+                        bird.selected = !bird.selected;
+                        rebuildTracks(); saveSelections(); refreshSettings();
+                    };
                     options.appendChild(opt);
                 });
 
@@ -334,7 +368,6 @@
             return div;
         }
 
-        // ----- Settings toggle -----
         settingsBtn.addEventListener("click", () => {
             settingsOpen = !settingsOpen;
             settingsPage.style.display = settingsOpen ? "flex" : "none";

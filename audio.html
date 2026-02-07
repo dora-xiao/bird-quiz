@@ -193,6 +193,9 @@
         const GROUPS = ["group_1", "group_2"];
         let tracks = [], groups = {}, currentTrack = null, revealed = false, openGroups = new Set(), settingsOpen = false;
 
+        let queue = [];
+        let recentHistory = [];
+
         // Elements
         const settingsPage = document.getElementById("settings-page");
         const settingsBtn = document.getElementById("settingsBtn");
@@ -205,6 +208,7 @@
         function saveSelections() {
             localStorage.setItem("birdSelections", JSON.stringify(groups));
         }
+
         function loadSelections() {
             const saved = localStorage.getItem("birdSelections");
             if (saved) {
@@ -238,7 +242,17 @@
             pickRandomTrack(false);
         }
 
-        // ----- Build tracks list based on selection -----
+        // ----- Shuffle helper -----
+        function shuffleArray(arr) {
+            const copy = arr.slice();
+            for (let i = copy.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [copy[i], copy[j]] = [copy[j], copy[i]];
+            }
+            return copy;
+        }
+
+        // ----- Build tracks list -----
         function rebuildTracks() {
             tracks = [];
             for (const [group, birds] of Object.entries(groups)) {
@@ -257,31 +271,37 @@
                     }
                 }
             }
+            queue = shuffleArray(tracks);
         }
 
-        // ----- Pick a random track -----
+        // ----- Pick a random track (no repeats within 3) -----
         function pickRandomTrack(autoplay = true) {
             if (!tracks.length) return;
 
-            let next;
-            do {
-                next = tracks[Math.floor(Math.random() * tracks.length)];
-            } while (next === currentTrack && tracks.length > 1);
+            if (!queue.length) {
+                const eligible = tracks.filter(t => !recentHistory.includes(t));
+                queue = eligible.length ? shuffleArray(eligible) : shuffleArray(tracks);
+            }
 
+            let next = queue.shift();
             currentTrack = next;
+
             audio.src = currentTrack.src;
             audio.load();
 
             if (autoplay) {
                 audio.play().catch(err => {
                     console.error("Audio failed to play:", currentTrack.src, err);
-                    pickRandomTrack(true); // auto-skip broken track
+                    pickRandomTrack(true);
                 });
             }
 
             trackName.innerHTML = "";
             revealed = false;
             revealBtn.textContent = "Reveal";
+
+            recentHistory.push(currentTrack);
+            if (recentHistory.length > 3) recentHistory.shift();
         }
 
         // ----- Reveal button -----
@@ -289,11 +309,11 @@
             if (!currentTrack) return;
             if (!revealed) {
                 trackName.innerHTML = `
-      <strong>${currentTrack.display_name}</strong>
-      <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
-      <div class="info">${currentTrack.location}</div>
-      <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
-    `;
+                    <strong>${currentTrack.display_name}</strong>
+                    <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
+                    <div class="info">${currentTrack.location}</div>
+                    <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
+                `;
                 revealBtn.textContent = "Next";
                 revealed = true;
             } else {
@@ -311,9 +331,11 @@
             for (const [groupName, birds] of Object.entries(groups)) {
                 const wrapper = document.createElement("div");
                 wrapper.className = "group-select";
+
                 const header = document.createElement("div");
                 header.className = "group-header";
                 header.innerHTML = `<span>${groupName.replace("_", " ")}</span><i class="fa-solid fa-chevron-down"></i>`;
+
                 const options = document.createElement("div");
                 options.className = "group-options";
                 if (openGroups.has(groupName)) options.style.display = "block";
@@ -348,7 +370,7 @@
             return div;
         }
 
-        // ----- Settings toggle (gear <-> X) -----
+        // ----- Settings toggle -----
         settingsBtn.addEventListener("click", () => {
             settingsOpen = !settingsOpen;
             settingsPage.style.display = settingsOpen ? "flex" : "none";

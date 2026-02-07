@@ -3,49 +3,97 @@
 
 <head>
     <meta charset="UTF-8" />
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bird Audio Quiz</title>
     <style>
+        *,
+        *::before,
+        *::after {
+            box-sizing: border-box;
+        }
+
         html,
         body {
             height: 100%;
             margin: 0;
-            background: #111;
+            background: #1c1c2a;
+            /* charcoal/dark blue */
             color: #fff;
             font-family: system-ui, sans-serif;
+            justify-content: center;
+            align-items: center;
         }
 
         .container {
-            height: 100%;
+            min-height: 100vh;
+            width: 100%;
+            max-width: 500px;
+            /* desktop max */
+            min-width: 320px;
+            /* mobile min */
+            margin: 0 auto;
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            align-items: center;
             gap: 16px;
+            align-items: center;
+            /* children span full width */
+            padding: 30px;
+            justify-content: center;
         }
 
         audio {
-            width: 320px;
+            width: 100%;
+            height: 50px;
+            display: block;
+            border-radius: 4px;
+            background: #2a2a2a;
+        }
+
+        .reveal-card {
+            width: 100%;
+            min-height: 150px;
+            /* fixed height so card doesn't shrink */
+            background-color: #2f2f4f;
+            /* slightly lighter than page */
+            border-radius: 12px;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            gap: 8px;
+            position: relative;
+        }
+
+        .reveal-card .track-info {
+            display: none;
+            /* placeholder for text before reveal */
         }
 
         button {
-            width: 120px;
-            height: 44px;
-            font-size: 16px;
+            position: absolute;
+            /* top right inside card */
+            top: 16px;
+            right: 16px;
+            height: 36px;
+            font-size: 14px;
             cursor: pointer;
             border: none;
             border-radius: 6px;
-            background: #2a2a2a;
+            background: #444;
             color: #fff;
+            width: 8ch;
+            background-color: #515179;
         }
 
         button:hover {
-            background: #3a3a3a;
+            background: #5a5aba;
         }
 
         .track-name {
-            height: 22px;
+            height: 0px;
+            /* no text outside card */
             font-size: 14px;
-            opacity: 0.85;
+            opacity: 0;
         }
     </style>
 </head>
@@ -54,252 +102,90 @@
 
     <div class="container">
         <audio id="audio" controls preload="metadata"></audio>
-
-        <button id="revealBtn">Reveal</button>
-
-        <div class="track-name" id="trackName"></div>
+        <div class="reveal-card">
+            <div class="card-header">
+                <button id="revealBtn" disabled>Loading...</button>
+            </div>
+            <div class="track-text" id="trackName"></div>
+        </div>
     </div>
 
     <script>
-        const BASE_URL =
-            "https://raw.githubusercontent.com/dora-xiao/bird-quiz/main/group_1/audios/";
+        const BASE_URL = "https://raw.githubusercontent.com/dora-xiao/bird-quiz/main/";
+        const GROUPS = ["group_1"]; // add more groups if needed
 
-        const tracks = [
-            // "American_Crow_0.mp3",
-            // "American_Crow_1.mp3",
-            // "American_Crow_10.mp3",
-            // "American_Crow_11.mp3",
-            // "American_Crow_12.mp3",
-            // "American_Crow_13.mp3",
-            // "American_Crow_2.mp3",
-            // "American_Crow_3.mp3",
-            "American_Crow_4.mp3",
-            // "American_Crow_5.mp3",
-            // "American_Crow_6.mp3",
-            "American_Crow_7.mp3",
-            "American_Crow_8.mp3",
-            // "American_Crow_9.mp3",
-            "American_Robin_0.mp3",
-            "American_Robin_1.mp3",
-            "American_Robin_10.mp3",
-            "American_Robin_11.mp3",
-            "American_Robin_12.mp3",
-            "American_Robin_13.mp3",
-            "American_Robin_14.mp3",
-            "American_Robin_15.mp3",
-            // "American_Robin_16.mp3",
-            // "American_Robin_2.mp3",
-            "American_Robin_3.mp3",
-            "American_Robin_4.mp3",
-            "American_Robin_5.mp3",
-            "American_Robin_6.mp3",
-            "American_Robin_7.mp3",
-            "American_Robin_8.mp3",
-            "American_Robin_9.mp3",
-            "Black-capped_Chickadee_0.mp3",
-            // "Black-capped_Chickadee_1.mp3",
-            "Black-capped_Chickadee_10.mp3",
-            "Black-capped_Chickadee_11.mp3",
-            // "Black-capped_Chickadee_2.mp3",
-            // "Black-capped_Chickadee_3.mp3",
-            "Black-capped_Chickadee_4.mp3",
-            "Black-capped_Chickadee_5.mp3",
-            "Black-capped_Chickadee_6.mp3",
-            "Black-capped_Chickadee_7.mp3",
-            "Black-capped_Chickadee_8.mp3",
-            "Black-capped_Chickadee_9.mp3",
-            "Blue_Jay_0.mp3",
-            "Blue_Jay_1.mp3",
-            "Blue_Jay_10.mp3",
-            "Blue_Jay_11.mp3",
-            "Blue_Jay_12.mp3",
-            "Blue_Jay_13.mp3",
-            "Blue_Jay_14.mp3",
-            "Blue_Jay_15.mp3",
-            "Blue_Jay_2.mp3",
-            "Blue_Jay_3.mp3",
-            // "Blue_Jay_4.mp3",
-            // "Blue_Jay_5.mp3",
-            "Blue_Jay_6.mp3",
-            "Blue_Jay_7.mp3",
-            "Blue_Jay_8.mp3",
-            // "Blue_Jay_9.mp3",
-            "Canada_Goose_0.mp3",
-            // "Canada_Goose_1.mp3",
-            "Canada_Goose_2.mp3",
-            "Canada_Goose_3.mp3",
-            // "Canada_Goose_4.mp3",
-            "Canada_Goose_5.mp3",
-            "Canada_Goose_6.mp3",
-            "Canada_Goose_7.mp3",
-            "Canada_Goose_8.mp3",
-            "Canada_Goose_9.mp3",
-            "Cedar_Waxwing_0.mp3",
-            "Cedar_Waxwing_1.mp3",
-            "Cedar_Waxwing_2.mp3",
-            "Cedar_Waxwing_3.mp3",
-            "Cedar_Waxwing_4.mp3",
-            "Coopers_Hawk_0.mp3",
-            "Coopers_Hawk_1.mp3",
-            "Coopers_Hawk_2.mp3",
-            "Coopers_Hawk_3.mp3",
-            "Dark-eyed_Junco_0.mp3",
-            "Dark-eyed_Junco_1.mp3",
-            // "Dark-eyed_Junco_10.mp3",
-            // "Dark-eyed_Junco_11.mp3",
-            // "Dark-eyed_Junco_12.mp3",
-            // "Dark-eyed_Junco_13.mp3",
-            // "Dark-eyed_Junco_14.mp3",
-            // "Dark-eyed_Junco_15.mp3",
-            // "Dark-eyed_Junco_16.mp3",
-            // "Dark-eyed_Junco_17.mp3",
-            // "Dark-eyed_Junco_18.mp3",
-            // "Dark-eyed_Junco_19.mp3",
-            "Dark-eyed_Junco_2.mp3",
-            "Dark-eyed_Junco_20.mp3",
-            "Dark-eyed_Junco_21.mp3",
-            // "Dark-eyed_Junco_22.mp3",
-            "Dark-eyed_Junco_23.mp3",
-            "Dark-eyed_Junco_24.mp3",
-            "Dark-eyed_Junco_25.mp3",
-            "Dark-eyed_Junco_26.mp3",
-            "Dark-eyed_Junco_27.mp3",
-            "Dark-eyed_Junco_3.mp3",
-            // "Dark-eyed_Junco_4.mp3",
-            // "Dark-eyed_Junco_5.mp3",
-            // "Dark-eyed_Junco_6.mp3",
-            // "Dark-eyed_Junco_7.mp3",
-            // "Dark-eyed_Junco_8.mp3",
-            // "Dark-eyed_Junco_9.mp3",
-            "Downy_Woodpecker_0.mp3",
-            "Downy_Woodpecker_1.mp3",
-            // "Downy_Woodpecker_10.mp3",
-            "Downy_Woodpecker_2.mp3",
-            "Downy_Woodpecker_3.mp3",
-            // "Downy_Woodpecker_4.mp3",
-            // "Downy_Woodpecker_5.mp3",
-            // "Downy_Woodpecker_6.mp3",
-            "Downy_Woodpecker_7.mp3",
-            "Downy_Woodpecker_8.mp3",
-            "Downy_Woodpecker_9.mp3",
-            "Eastern_Bluebird_0.mp3",
-            "Eastern_Bluebird_1.mp3",
-            "Eastern_Bluebird_2.mp3",
-            "Eastern_Bluebird_3.mp3",
-            // "Eastern_Bluebird_4.mp3",
-            "Eastern_Bluebird_5.mp3",
-            "Eastern_Bluebird_6.mp3",
-            "Eastern_Bluebird_7.mp3",
-            "Gray_Catbird_0.mp3",
-            // "Gray_Catbird_1.mp3",
-            "Gray_Catbird_2.mp3",
-            "Gray_Catbird_3.mp3",
-            "Gray_Catbird_4.mp3",
-            "Gray_Catbird_5.mp3",
-            "Gray_Catbird_6.mp3",
-            "Gray_Catbird_7.mp3",
-            "Gray_Catbird_8.mp3",
-            "Great_Blue_Heron_0.mp3",
-            "Great_Blue_Heron_1.mp3",
-            "Great_Blue_Heron_2.mp3",
-            "Great_Blue_Heron_3.mp3",
-            "Great_Blue_Heron_4.mp3",
-            "Hairy_Woodpecker_0.mp3",
-            "Hairy_Woodpecker_1.mp3",
-            // "Hairy_Woodpecker_10.mp3",
-            // "Hairy_Woodpecker_11.mp3",
-            // "Hairy_Woodpecker_12.mp3",
-            // "Hairy_Woodpecker_13.mp3",
-            // "Hairy_Woodpecker_14.mp3",
-            // "Hairy_Woodpecker_15.mp3",
-            // "Hairy_Woodpecker_16.mp3",
-            "Hairy_Woodpecker_2.mp3",
-            "Hairy_Woodpecker_3.mp3",
-            // "Hairy_Woodpecker_4.mp3",
-            // "Hairy_Woodpecker_5.mp3",
-            // "Hairy_Woodpecker_6.mp3",
-            // "Hairy_Woodpecker_7.mp3",
-            // "Hairy_Woodpecker_8.mp3",
-            // "Hairy_Woodpecker_9.mp3",
-            "Mallard_0.mp3",
-            "Mallard_1.mp3",
-            // "Mallard_2.mp3",
-            "Mallard_3.mp3",
-            "Mallard_4.mp3",
-            "Mallard_5.mp3",
-            "Northern_Mockingbird_0.mp3",
-            "Northern_Mockingbird_1.mp3",
-            // "Northern_Mockingbird_2.mp3",
-            "Northern_Mockingbird_3.mp3",
-            // "Northern_Mockingbird_4.mp3",
-            "Northern_Mockingbird_5.mp3",
-            "Northern_Mockingbird_6.mp3",
-            "Red-eyed_Vireo_0.mp3",
-            "Red-eyed_Vireo_1.mp3",
-            "Red-eyed_Vireo_2.mp3",
-            "Red-eyed_Vireo_3.mp3",
-            "Red-eyed_Vireo_4.mp3",
-            "Red-eyed_Vireo_5.mp3",
-            "Red-eyed_Vireo_6.mp3",
-            "Red-eyed_Vireo_7.mp3",
-            "Red-eyed_Vireo_8.mp3",
-            "Red-tailed_Hawk_0.mp3",
-            "Red-tailed_Hawk_1.mp3",
-            "Red-tailed_Hawk_2.mp3",
-            "Red-tailed_Hawk_3.mp3",
-            "Red-tailed_Hawk_4.mp3",
-            "Red-tailed_Hawk_5.mp3",
-            // "Red-tailed_Hawk_6.mp3",
-            "Tufted_Titmouse_0.mp3",
-            "Tufted_Titmouse_1.mp3",
-            "Tufted_Titmouse_10.mp3",
-            "Tufted_Titmouse_11.mp3",
-            "Tufted_Titmouse_2.mp3",
-            // "Tufted_Titmouse_3.mp3",
-            "Tufted_Titmouse_4.mp3",
-            "Tufted_Titmouse_5.mp3",
-            "Tufted_Titmouse_6.mp3",
-            "Tufted_Titmouse_7.mp3",
-            "Tufted_Titmouse_8.mp3",
-            "Tufted_Titmouse_9.mp3",
-            "Turkey_Vulture_0.mp3",
-            "Wood_Thrush_0.mp3",
-            "Wood_Thrush_1.mp3",
-            "Wood_Thrush_2.mp3",
-            "Wood_Thrush_3.mp3",
-            "Wood_Thrush_4.mp3",
-            "Wood_Thrush_5.mp3",
-        ];
+        let tracks = [];
+        let currentTrack = null;
+        let revealed = false;
 
         const audio = document.getElementById("audio");
         const revealBtn = document.getElementById("revealBtn");
         const trackName = document.getElementById("trackName");
 
-        let currentTrack = null;
-        let revealed = false;
+        // Load tracks from JSON
+        async function loadTracks() {
+            tracks = [];
+
+            for (const group of GROUPS) {
+                const res = await fetch(`${BASE_URL}${group}/audio_data.json`);
+                const data = await res.json();
+
+                for (const bird of Object.values(data)) {
+                    for (const audioData of bird.audios) {
+                        if (!audioData.selected) continue;
+
+                        tracks.push({
+                            display_name: bird.display_name,
+                            audio_type: audioData.audio_type,
+                            location: audioData.location_timestamp,
+                            credit: audioData.credit,
+                            credit_link: audioData.credit_link,
+                            src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${audioData.audio_index}.mp3`
+                        });
+                    }
+                }
+            }
+
+            if (!tracks.length) {
+                trackName.textContent = "No tracks available!";
+                revealBtn.disabled = true;
+                return;
+            }
+
+            revealBtn.disabled = false;
+            revealBtn.textContent = "Reveal";
+            pickRandomTrack(false);
+        }
 
         function pickRandomTrack(autoplay = false) {
+            if (!tracks.length) return;
+
             let next;
             do {
                 next = tracks[Math.floor(Math.random() * tracks.length)];
             } while (next === currentTrack && tracks.length > 1);
 
             currentTrack = next;
-            audio.src = BASE_URL + currentTrack;
+            audio.src = currentTrack.src;
             audio.load();
+            if (autoplay) audio.play();
 
-            if (autoplay) {
-                audio.play();
-            }
-
-            trackName.textContent = "";
-            revealBtn.textContent = "Reveal";
+            trackName.innerHTML = ""; // hide previous text
             revealed = false;
+            revealBtn.textContent = "Reveal";
         }
 
+        // Reveal track info
         revealBtn.addEventListener("click", () => {
+            if (!currentTrack) return;
+
             if (!revealed) {
-                trackName.textContent = currentTrack.replace(".mp3", "").replace(/_(\d+)$/, " ($1)").replace(/_/g, " ");
+                trackName.innerHTML = `
+      <strong>${currentTrack.display_name}</strong><br>
+      ${toTitleCase(currentTrack.audio_type)}<br>
+      ${currentTrack.location}<br>
+      <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
+    `;
                 revealBtn.textContent = "Next";
                 revealed = true;
             } else {
@@ -307,8 +193,13 @@
             }
         });
 
-        // Load first track immediately so the player is active
-        pickRandomTrack(false);
+        // Helper: convert string to title case
+        function toTitleCase(str) {
+            return str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
+        }
+
+        // Initialize
+        loadTracks();
     </script>
 
 </body>

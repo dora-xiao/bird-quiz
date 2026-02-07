@@ -6,19 +6,25 @@ import requests
 def scrape_audio_data(birds: dict[str, dict], groups: list[str]) -> dict[str, dict]:
     AUDIO_REGEX = re.compile(
         r'''
-        jp_container_audio_(?P<audio_index>\d+)
+        <li>[\s\S]*?
+        <div\s+class="jp-jplayer[^"]*"
+            [^>]*name="(?P<link>https://www\.allaboutbirds\.org/guide/assets/sound/\d+\.mp3)"
         [\s\S]*?
-        (?P<audio_type>
-            Calls?|Song|Drum|Display|Juvenile\s+Calls?|Alarm\s+Calls?|Flight\s+Calls?|Flock\s+calls?
-        )
+        id="jp_container_audio_(?P<audio_index>\d+)"
         [\s\S]*?
-        <span>\s*
-            (?P<location_timestamp>[^<]+?)
-        \s*</span>
-        \s*<a\s+href="(?P<link>https://macaulaylibrary\.org/audio/\d+)"
+        <span\s+class="jp-title">(?P<audio_type>[^<]+)</span>
+        [\s\S]*?
+        <span>\s*(?P<location_timestamp>[^<]+?)\s*</span>
+        [\s\S]*?
+        <a\s+href="(?P<credit_link>https://macaulaylibrary\.org/audio/\d+)[^"]*"
+        [^>]*>
+            \s*<span>\s*(?P<credit_text>[^<]+?)\s*</span>
+        \s*</a>
+        [\s\S]*?</li>
         ''',
         re.VERBOSE | re.IGNORECASE
     )
+
     
     # To simulate being a real user
     headers = {
@@ -41,7 +47,9 @@ def scrape_audio_data(birds: dict[str, dict], groups: list[str]) -> dict[str, di
                     "audio_index": int(m.group("audio_index")),
                     "audio_type": m.group("audio_type").strip(),
                     "location_timestamp": m.group("location_timestamp").strip(),
-                    "link": m.group("link") + ".mp3",
+                    "link": m.group("link"),                 # snippet MP3
+                    "credit_link": m.group("credit_link"),   # Macaulay page
+                    "credit": m.group("credit_text").strip()
                 })
 
             results[group][url_name] = {

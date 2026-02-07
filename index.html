@@ -125,21 +125,38 @@
 
         .settings {
             color: #a2a2ae;
-            position: absolute;
-            padding: 20px;
-            right: 0px;
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 1100;
+            cursor: pointer;
         }
 
         .settings:hover {
             color: #5a5aba;
         }
 
+        #settings-page {
+            position: fixed;
+            inset: 0;
+            background-color: rgba(255, 255, 255, 0.23);
+            backdrop-filter: blur(8px);
+            display: none;
+            z-index: 1000;
+            padding: 40px;
+            color: #000;
+            align-items: center;
+            justify-content: center;
+        }
     </style>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 
 <body>
-    <i class="fa-solid fa-gear fa-3x settings" onclick="alert('test')"></i>
+    <i id="settingsBtn" class="fa-solid fa-gear fa-3x settings"></i>
+    <div id="settings-page">
+        <p>test</p>
+    </div>
     <div class="container">
         <audio id="audio" controls preload="metadata"></audio>
         <div class="reveal-card">
@@ -157,10 +174,13 @@
         let tracks = [];
         let currentTrack = null;
         let revealed = false;
+        let settingsOpen = false;
 
         const audio = document.getElementById("audio");
         const revealBtn = document.getElementById("revealBtn");
+        const settingsBtn = document.getElementById("settingsBtn");
         const trackName = document.getElementById("trackName");
+        const settingsPage = document.getElementById("settings-page");
 
         // Load tracks from JSON
         async function loadTracks() {
@@ -231,6 +251,15 @@
             } else {
                 pickRandomTrack(true);
             }
+        });
+
+        settingsBtn.addEventListener("click", () => {
+            settingsOpen = !settingsOpen;
+            settingsPage.style.display = settingsOpen ? "block" : "none";
+
+            // swap icon
+            settingsBtn.classList.toggle("fa-gear", !settingsOpen);
+            settingsBtn.classList.toggle("fa-xmark", settingsOpen);
         });
 
         // Helper: convert string to title case

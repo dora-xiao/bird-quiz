@@ -1,0 +1,1266 @@
+{
+    "https://www.allaboutbirds.org/guide/Great_Blue_Heron/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549012.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549013.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549014.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549015.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Display",
+            "location_timestamp": "Display",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549016.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Canada_Goose/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547952.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547953.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547954.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547955.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547956.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547957.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547958.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547959.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547960.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "display",
+            "location_timestamp": "Hiss",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/547961.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Mallard/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "calls",
+            "location_timestamp": "Female calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548013.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "calls",
+            "location_timestamp": "Female calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548014.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "calls",
+            "location_timestamp": "Male calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548015.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "calls",
+            "location_timestamp": "Female calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548016.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548017.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/548018.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Hairy_Woodpecker/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549342.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549343.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549344.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549345.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549347.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/522479.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549348.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549349.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/507371.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549346.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/536122.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (South Mexican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/215407971.mp3"
+        },
+        {
+            "audio_index": 12,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (South Mexican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/536123.mp3"
+        },
+        {
+            "audio_index": 13,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (South Mexican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/525971.mp3"
+        },
+        {
+            "audio_index": 14,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Costa Rican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/525972.mp3"
+        },
+        {
+            "audio_index": 15,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Costa Rican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/525973.mp3"
+        },
+        {
+            "audio_index": 16,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (Costa Rican)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549350.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Downy_Woodpecker/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549313.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549314.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549315.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549316.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549317.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Juvenile calls",
+            "location_timestamp": "Juvenile calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549318.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549319.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549320.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Drum",
+            "location_timestamp": "Drum (Rocky Mts.)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549321.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549322.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549323.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/American_Crow/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549834.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549835.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549836.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549837.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549838.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549839.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549840.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549841.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549842.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549843.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Juvenile calls",
+            "location_timestamp": "Juvenile calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549844.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific vocal type)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549845.mp3"
+        },
+        {
+            "audio_index": 12,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific vocal type)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/538148.mp3"
+        },
+        {
+            "audio_index": 13,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Pacific vocal type)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/538149.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Blue_Jay/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549762.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549763.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549764.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549765.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549766.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549767.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549768.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549769.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549770.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549771.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549772.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549773.mp3"
+        },
+        {
+            "audio_index": 12,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549774.mp3"
+        },
+        {
+            "audio_index": 13,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549775.mp3"
+        },
+        {
+            "audio_index": 14,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549776.mp3"
+        },
+        {
+            "audio_index": 15,
+            "audio_type": "song",
+            "location_timestamp": "Whisper song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549777.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Gray_Catbird/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550264.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550265.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550266.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550267.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550268.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550269.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/543811.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550270.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550271.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Northern_Mockingbird/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550318.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550319.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550320.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550321.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550322.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550323.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550324.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Dark-eyed_Junco/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Slate-colored)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550822.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Slate-colored)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550823.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Slate-colored)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550824.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Slate-colored)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550825.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Oregon)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550826.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Oregon)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550827.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Oregon)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550828.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Oregon)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550829.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Pink-sided)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550830.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Pink-sided)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550831.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Pink-sided)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550832.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Song",
+            "location_timestamp": "Song (White-winged)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550833.mp3"
+        },
+        {
+            "audio_index": 12,
+            "audio_type": "Song",
+            "location_timestamp": "Song (White-winged)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550834.mp3"
+        },
+        {
+            "audio_index": 13,
+            "audio_type": "Song",
+            "location_timestamp": "Song (White-winged)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550835.mp3"
+        },
+        {
+            "audio_index": 14,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Gray-headed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550836.mp3"
+        },
+        {
+            "audio_index": 15,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Gray-headed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550837.mp3"
+        },
+        {
+            "audio_index": 16,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Gray-headed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550838.mp3"
+        },
+        {
+            "audio_index": 17,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Red-backed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550839.mp3"
+        },
+        {
+            "audio_index": 18,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Red-backed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550840.mp3"
+        },
+        {
+            "audio_index": 19,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Red-backed)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550841.mp3"
+        },
+        {
+            "audio_index": 20,
+            "audio_type": "song",
+            "location_timestamp": "Complex song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550842.mp3"
+        },
+        {
+            "audio_index": 21,
+            "audio_type": "song",
+            "location_timestamp": "Complex song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550843.mp3"
+        },
+        {
+            "audio_index": 22,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550844.mp3"
+        },
+        {
+            "audio_index": 23,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550845.mp3"
+        },
+        {
+            "audio_index": 24,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550846.mp3"
+        },
+        {
+            "audio_index": 25,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550847.mp3"
+        },
+        {
+            "audio_index": 26,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550848.mp3"
+        },
+        {
+            "audio_index": 27,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550849.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Eastern_Bluebird/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550326.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550327.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550328.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550329.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550330.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550331.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550332.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls (Eastern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/532756.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/American_Robin/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550418.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550419.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550420.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550421.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550422.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550423.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550424.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550425.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550426.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550427.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550428.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550429.mp3"
+        },
+        {
+            "audio_index": 12,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550430.mp3"
+        },
+        {
+            "audio_index": 13,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550431.mp3"
+        },
+        {
+            "audio_index": 14,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/541842.mp3"
+        },
+        {
+            "audio_index": 15,
+            "audio_type": "Alarm calls",
+            "location_timestamp": "Alarm calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550432.mp3"
+        },
+        {
+            "audio_index": 16,
+            "audio_type": "Juvenile calls",
+            "location_timestamp": "Juvenile calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/532840.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Wood_Thrush/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550411.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550412.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550413.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550414.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550415.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Flight calls",
+            "location_timestamp": "Flight calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550416.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Tufted_Titmouse/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549947.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549948.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549949.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549950.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549951.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549952.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549953.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549954.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549955.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549956.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549957.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549958.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Black-capped_Chickadee/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549876.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549877.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549878.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549879.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549880.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549881.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549882.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549883.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549884.mp3"
+        },
+        {
+            "audio_index": 9,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549885.mp3"
+        },
+        {
+            "audio_index": 10,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549886.mp3"
+        },
+        {
+            "audio_index": 11,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549887.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Red-eyed_Vireo/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549720.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549721.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Song",
+            "location_timestamp": "Song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549722.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "song",
+            "location_timestamp": "Complex song",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549723.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549724.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549725.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549726.mp3"
+        },
+        {
+            "audio_index": 7,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549727.mp3"
+        },
+        {
+            "audio_index": 8,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549728.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Red-tailed_Hawk/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549135.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549136.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549137.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549138.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "Display",
+            "location_timestamp": "Display",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549139.mp3"
+        },
+        {
+            "audio_index": 5,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549140.mp3"
+        },
+        {
+            "audio_index": 6,
+            "audio_type": "Juvenile calls",
+            "location_timestamp": "Juvenile calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549141.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Coopers_Hawk/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549096.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549097.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549098.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/549099.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Turkey_Vulture/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "display",
+            "location_timestamp": "Hiss (Northern)",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/535042.mp3"
+        }
+    ],
+    "https://www.allaboutbirds.org/guide/Cedar_Waxwing/sounds": [
+        {
+            "audio_index": 0,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550443.mp3"
+        },
+        {
+            "audio_index": 1,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550444.mp3"
+        },
+        {
+            "audio_index": 2,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550445.mp3"
+        },
+        {
+            "audio_index": 3,
+            "audio_type": "Calls",
+            "location_timestamp": "Calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550446.mp3"
+        },
+        {
+            "audio_index": 4,
+            "audio_type": "calls",
+            "location_timestamp": "Flock calls",
+            "link": "https://www.allaboutbirds.org/guide/assets/sound/550447.mp3"
+        }
+    ]
+}

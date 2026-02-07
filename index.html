@@ -5,11 +5,13 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bird Audio Quiz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
+        /* ===== Base ===== */
         *,
         *::before,
         *::after {
-            box-sizing: border-box;
+            box-sizing: border-box
         }
 
         html,
@@ -17,26 +19,18 @@
             height: 100%;
             margin: 0;
             background: #1c1c2a;
-            /* charcoal/dark blue */
             color: #fff;
             font-family: system-ui, sans-serif;
-            justify-content: center;
-            align-items: center;
         }
 
         .container {
             min-height: 100vh;
-            width: 100%;
             max-width: 500px;
-            /* desktop max */
-            min-width: 320px;
-            /* mobile min */
             margin: 0 auto;
             display: flex;
             flex-direction: column;
             gap: 16px;
             align-items: center;
-            /* children span full width */
             padding: 30px;
             justify-content: center;
         }
@@ -44,233 +38,304 @@
         audio {
             width: 100%;
             height: 40px;
-            display: block;
-            border-radius: 4px;
-            background: #2a2a2a;
         }
 
         .reveal-card {
             width: 100%;
             min-height: 180px;
-            /* fixed height so card doesn't shrink */
-            background-color: #2f2f4f;
-            /* slightly lighter than page */
+            background: #2f2f4f;
             border-radius: 20px;
             padding: 16px;
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            gap: 8px;
             position: relative;
-        }
-
-        .reveal-card .track-info {
-            display: none;
-            /* placeholder for text before reveal */
         }
 
         button {
             position: absolute;
-            /* top right inside card */
             top: 16px;
             right: 16px;
             height: 36px;
-            font-size: 14px;
-            cursor: pointer;
-            border: none;
             border-radius: 6px;
-            background: #444;
+            background: #515179;
             color: #ececec;
-            width: 8ch;
-            background-color: #515179;
+            border: none;
+            cursor: pointer;
+            transition: .2s;
         }
 
         button:hover {
             background: #5a5aba;
         }
 
-        .track-name {
-            height: 0px;
-            /* no text outside card */
-            font-size: 14px;
-            opacity: 0;
-        }
-
-        /* Revealed bird info styling */
         .track-text strong {
             display: block;
             font-size: 20px;
-            /* larger font for bird name */
             margin-bottom: 16px;
-            /* extra line break */
             color: #ececec;
-            /* bird name in white */
         }
 
-        .track-text .info {
-            font-size: 14px;
-            /* smaller font */
-            color: #d0d0d0;
-            /* off-white for other info */
-            margin-top: 8px;
-        }
-
+        .track-text .info,
         .track-text a {
-            display: block;
-            color: #d0d0d0;
-            text-decoration: underline;
             font-size: 14px;
-            margin-top: 8px;
+            color: #d0d0d0;
+            display: block;
+            margin-top: 6px;
         }
 
         .settings {
-            color: #a2a2ae;
             position: fixed;
             top: 20px;
             right: 20px;
-            z-index: 1100;
             cursor: pointer;
+            color: #a2a2ae;
+            z-index: 1100;
+            transition: .2s;
         }
 
         .settings:hover {
             color: #5a5aba;
         }
 
+        /* ===== Settings Overlay ===== */
         #settings-page {
             position: fixed;
             inset: 0;
-            background-color: rgba(255, 255, 255, 0.23);
+            background: rgba(255, 255, 255, 0.23);
             backdrop-filter: blur(8px);
             display: none;
-            z-index: 1000;
-            padding: 40px;
-            color: #000;
             align-items: center;
             justify-content: center;
+            z-index: 1000;
+        }
+
+        .settings-panel {
+            background: #ffffff2c;
+            border-radius: 18px;
+            padding: 24px;
+            margin: 20px;
+            width: 100%;
+            max-width: 420px;
+            color: #000;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+
+        .group-header {
+            background: #2f2f4f;
+            color: #fff;
+            padding: 12px 16px;
+            border-radius: 10px;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .group-header:hover {
+            background: #3b3b6b;
+        }
+
+        .group-options {
+            margin-top: 8px;
+            background: #f4f4f7;
+            border-radius: 10px;
+            padding: 8px;
+            display: none;
+            max-height: 260px;
+            overflow-y: auto;
+        }
+
+        .option {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 8px;
+            border-radius: 8px;
+            cursor: pointer;
+        }
+
+        .option:hover {
+            background: #e4e4ee;
+        }
+
+        .option i {
+            width: 18px;
+            color: #5a5aba;
+        }
+
+        .control {
+            font-weight: 600;
         }
     </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
 </head>
 
 <body>
+
     <i id="settingsBtn" class="fa-solid fa-gear fa-3x settings"></i>
     <div id="settings-page">
-        <p>test</p>
+        <div class="settings-panel"></div>
     </div>
+
     <div class="container">
         <audio id="audio" controls preload="metadata"></audio>
         <div class="reveal-card">
-            <div class="card-header">
-                <button id="revealBtn" disabled>Loading...</button>
-            </div>
+            <button id="revealBtn" disabled>Loading...</button>
             <div class="track-text" id="trackName"></div>
         </div>
     </div>
 
     <script>
         const BASE_URL = "https://raw.githubusercontent.com/dora-xiao/bird-quiz/main/";
-        const GROUPS = ["group_1"]; // add more groups if needed
+        const GROUPS = ["group_1"];
+        let tracks = [], groups = {}, currentTrack = null, revealed = false, openGroups = new Set(), settingsOpen = false;
 
-        let tracks = [];
-        let currentTrack = null;
-        let revealed = false;
-        let settingsOpen = false;
-
+        // Elements
+        const settingsPage = document.getElementById("settings-page");
+        const settingsBtn = document.getElementById("settingsBtn");
         const audio = document.getElementById("audio");
         const revealBtn = document.getElementById("revealBtn");
-        const settingsBtn = document.getElementById("settingsBtn");
         const trackName = document.getElementById("trackName");
-        const settingsPage = document.getElementById("settings-page");
+        const panel = settingsPage.querySelector(".settings-panel");
 
-        // Load tracks from JSON
-        async function loadTracks() {
-            tracks = [];
-
-            for (const group of GROUPS) {
-                const res = await fetch(`${BASE_URL}${group}/audio_data.json`);
-                const data = await res.json();
-
-                for (const bird of Object.values(data)) {
-                    for (const audioData of bird.audios) {
-                        if (!audioData.selected) continue;
-
-                        tracks.push({
-                            display_name: bird.display_name,
-                            audio_type: audioData.audio_type,
-                            location: audioData.location_timestamp,
-                            credit: audioData.credit,
-                            credit_link: audioData.credit_link,
-                            src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${audioData.audio_index}.mp3`
+        // ----- Persistence -----
+        function saveSelections() {
+            localStorage.setItem("birdSelections", JSON.stringify(groups));
+        }
+        function loadSelections() {
+            const saved = localStorage.getItem("birdSelections");
+            if (saved) {
+                const parsed = JSON.parse(saved);
+                for (const g in parsed) {
+                    if (groups[g]) {
+                        groups[g].forEach((bird, i) => {
+                            if (parsed[g][i]) {
+                                bird.audios.forEach((a, j) => {
+                                    a.selected = parsed[g][i].audios[j].selected;
+                                });
+                            }
                         });
                     }
                 }
             }
+        }
 
-            if (!tracks.length) {
-                trackName.textContent = "No tracks available!";
-                revealBtn.disabled = true;
-                return;
+        // ----- Load tracks -----
+        async function loadTracks() {
+            for (const group of GROUPS) {
+                const res = await fetch(`${BASE_URL}${group}/audio_data.json`);
+                const data = await res.json();
+                groups[group] = Object.values(data);
             }
-
+            loadSelections();
+            rebuildTracks();
+            refreshSettings();
             revealBtn.disabled = false;
             revealBtn.textContent = "Reveal";
             pickRandomTrack(false);
         }
 
-        function pickRandomTrack(autoplay = false) {
+        // ----- Build tracks list based on selection -----
+        function rebuildTracks() {
+            tracks = [];
+            for (const [group, birds] of Object.entries(groups)) {
+                for (const bird of birds) {
+                    for (const a of bird.audios) {
+                        if (a.selected) {
+                            tracks.push({
+                                display_name: bird.display_name,
+                                audio_type: a.audio_type,
+                                location: a.location_timestamp,
+                                credit: a.credit,
+                                credit_link: a.credit_link,
+                                src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${a.audio_index}.mp3`
+                            });
+                        }
+                    }
+                }
+            }
+        }
+
+        // ----- Pick a random track -----
+        function pickRandomTrack(autoplay = true) {
             if (!tracks.length) return;
-
             let next;
-            do {
-                next = tracks[Math.floor(Math.random() * tracks.length)];
-            } while (next === currentTrack && tracks.length > 1);
-
+            do { next = tracks[Math.floor(Math.random() * tracks.length)]; }
+            while (next === currentTrack && tracks.length > 1);
             currentTrack = next;
             audio.src = currentTrack.src;
             audio.load();
             if (autoplay) audio.play();
-
-            trackName.innerHTML = ""; // hide previous text
+            trackName.innerHTML = "";
             revealed = false;
             revealBtn.textContent = "Reveal";
         }
 
-        // Reveal track info
+        // ----- Reveal button -----
         revealBtn.addEventListener("click", () => {
             if (!currentTrack) return;
-
             if (!revealed) {
                 trackName.innerHTML = `
-                    <strong>${currentTrack.display_name}</strong>
-                    <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
-                    <div class="info">${currentTrack.location}</div>
-                    <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
-                `;
+      <strong>${currentTrack.display_name}</strong>
+      <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
+      <div class="info">${currentTrack.location}</div>
+      <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
+    `;
                 revealBtn.textContent = "Next";
                 revealed = true;
             } else {
                 pickRandomTrack(true);
             }
         });
+        function toTitleCase(str) { return str.replace(/\w\S*/g, t => t[0].toUpperCase() + t.slice(1)); }
 
+        // ----- Settings UI -----
+        function refreshSettings() {
+            panel.querySelectorAll(".group-select").forEach(el => el.remove());
+            for (const [groupName, birds] of Object.entries(groups)) {
+                const wrapper = document.createElement("div");
+                wrapper.className = "group-select";
+                const header = document.createElement("div");
+                header.className = "group-header";
+                header.innerHTML = `<span>${groupName.replace("_", " ")}</span><i class="fa-solid fa-chevron-down"></i>`;
+                const options = document.createElement("div");
+                options.className = "group-options";
+                if (openGroups.has(groupName)) options.style.display = "block";
+                header.onclick = () => { const open = options.style.display === "block"; options.style.display = open ? "none" : "block"; open ? openGroups.delete(groupName) : openGroups.add(groupName); }
+
+                options.appendChild(makeControl("Select all", () => { birds.forEach(b => b.audios.forEach(a => a.selected = true)); rebuildTracks(); saveSelections(); refreshSettings(); }));
+                options.appendChild(makeControl("Deselect all", () => { birds.forEach(b => b.audios.forEach(a => a.selected = false)); rebuildTracks(); saveSelections(); refreshSettings(); }));
+
+                birds.forEach(bird => {
+                    const selected = bird.audios.some(a => a.selected);
+                    const opt = document.createElement("div");
+                    opt.className = "option";
+                    opt.innerHTML = `<i class="fa-${selected ? "solid" : "regular"} fa-square-check"></i>${bird.display_name}`;
+                    opt.onclick = () => { bird.audios.forEach(a => a.selected = !selected); rebuildTracks(); saveSelections(); refreshSettings(); }
+                    options.appendChild(opt);
+                });
+
+                wrapper.append(header, options);
+                panel.appendChild(wrapper);
+            }
+        }
+        function makeControl(label, onClick) {
+            const div = document.createElement("div");
+            div.className = "option control";
+            div.innerHTML = `<i class="fa-solid fa-check-double"></i>${label}`;
+            div.onclick = onClick;
+            return div;
+        }
+
+        // ----- Settings toggle (gear <-> X) -----
         settingsBtn.addEventListener("click", () => {
             settingsOpen = !settingsOpen;
-            settingsPage.style.display = settingsOpen ? "block" : "none";
-
-            // swap icon
+            settingsPage.style.display = settingsOpen ? "flex" : "none";
             settingsBtn.classList.toggle("fa-gear", !settingsOpen);
             settingsBtn.classList.toggle("fa-xmark", settingsOpen);
         });
 
-        // Helper: convert string to title case
-        function toTitleCase(str) {
-            return str.replace(/\w\S*/g, txt => txt.charAt(0).toUpperCase() + txt.substr(1).toLowerCase());
-        }
-
-        // Initialize
+        // ----- Init -----
         loadTracks();
     </script>
-
 </body>
 
 </html>

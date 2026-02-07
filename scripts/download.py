@@ -29,25 +29,26 @@ locations = [
 with open(data_path, "r", encoding="utf-8") as f:
     data = json.load(f)
 
-selected = defaultdict(dict)
-for group, birds in data.items():
-    added = dict()
-    for url_name, bird_data in birds.items():
-        # Limit to select types of audios
-        if not any([a.lower() in bird_data["audio_type"].lower() for a in audio_types]):
-            continue
-        # Limit to select locations
-        if not any([l.lower() in bird_data["location_timestamp"].lower() for l in locations]):
-            continue
-        added[url_name] = bird_data
-    
-    if len(added) < 3: # Some only have distant audios
-        selected[group] = birds
-    else:
-        selected[group] = added
+for group, group_data in data.items():
+    for url_name, bird_data in group_data.items():
+        for bird in bird_data["audios"]:
+            # Limit to select types of audios
+            if not any(a.lower() in bird["audio_type"].lower() for a in audio_types):
+                bird["selected"] = False
+            # Limit to select locations
+            elif not any(l.lower() in bird["location_timestamp"].lower() for l in locations):
+                bird["selected"] = False
+            else:
+                bird["selected"] = True
 
-    with open(f"{group}/audios/data.json", "w") as f:
-        json.dump(selected[group], f, indent=4)
+        # Second pass: fallback if not enough audios
+        selected_count = sum(1 for a in bird_data["audios"] if a["selected"])
+        if selected_count < 3:
+            for bird in bird_data["audios"]:
+                bird["selected"] = True
+
+    with open(f"{group}/audio_data.json", "w") as f:
+        json.dump(data[group], f, indent=4)
 
 ############################################################
 # Download files
@@ -57,9 +58,12 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36'
 }
 
-for group, birds in selected.items():
+for group, birds in data.items():
     for url_name, bird_data in birds.items():
         for audio in bird_data["audios"]:
+            if not audio["selected"]:
+                continue
+
             audio_index = audio["audio_index"]
             base_url = audio["link"]
             mp3_url = base_url

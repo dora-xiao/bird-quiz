@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+
+    <style>
+        html,
+        body {
+            height: 100%;
+            margin: 0;
+            background: #111;
+            color: #fff;
+            font-family: system-ui, sans-serif;
+        }
+
+        .container {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 16px;
+        }
+
+        audio {
+            width: 320px;
+        }
+
+        button {
+            width: 120px;
+            height: 44px;
+            font-size: 16px;
+            cursor: pointer;
+            border: none;
+            border-radius: 6px;
+            background: #2a2a2a;
+            color: #fff;
+        }
+
+        button:hover {
+            background: #3a3a3a;
+        }
+
+        .track-name {
+            height: 22px;
+            font-size: 14px;
+            opacity: 0.85;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <audio id="audio" controls preload="metadata"></audio>
+
+        <button id="revealBtn">Reveal</button>
+
+        <div class="track-name" id="trackName"></div>
+    </div>
+
+    <script>
+        const BASE_URL =
+            "https://raw.githubusercontent.com/dora-xiao/bird-quiz/main/group_1/audios/";
+
+        const tracks = [
+            "American_Crow_0.mp3",
+            "American_Crow_1.mp3",
+            "American_Crow_10.mp3",
+            "American_Crow_11.mp3",
+            "American_Crow_12.mp3",
+            "American_Crow_13.mp3",
+            "American_Crow_2.mp3",
+            "American_Crow_3.mp3",
+            "American_Crow_4.mp3",
+            "American_Crow_5.mp3",
+            "American_Crow_6.mp3",
+            "American_Crow_7.mp3",
+            "American_Crow_8.mp3",
+            "American_Crow_9.mp3",
+            "American_Robin_0.mp3",
+            "American_Robin_1.mp3",
+            "American_Robin_10.mp3",
+            "American_Robin_11.mp3",
+            "American_Robin_12.mp3",
+            "American_Robin_13.mp3",
+            "American_Robin_14.mp3",
+            "American_Robin_15.mp3",
+            "American_Robin_16.mp3",
+            "American_Robin_2.mp3",
+            "American_Robin_3.mp3",
+            "American_Robin_4.mp3",
+            "American_Robin_5.mp3",
+            "American_Robin_6.mp3",
+            "American_Robin_7.mp3",
+            "American_Robin_8.mp3",
+            "American_Robin_9.mp3",
+            "Black-capped_Chickadee_0.mp3",
+            "Black-capped_Chickadee_1.mp3",
+            "Black-capped_Chickadee_10.mp3",
+            "Black-capped_Chickadee_11.mp3",
+            "Black-capped_Chickadee_2.mp3",
+            "Black-capped_Chickadee_3.mp3",
+            "Black-capped_Chickadee_4.mp3",
+            "Black-capped_Chickadee_5.mp3",
+            "Black-capped_Chickadee_6.mp3",
+            "Black-capped_Chickadee_7.mp3",
+            "Black-capped_Chickadee_8.mp3",
+            "Black-capped_Chickadee_9.mp3",
+            "Blue_Jay_0.mp3",
+            "Blue_Jay_1.mp3",
+            "Blue_Jay_10.mp3",
+            "Blue_Jay_11.mp3",
+            "Blue_Jay_12.mp3",
+            "Blue_Jay_13.mp3",
+            "Blue_Jay_14.mp3",
+            "Blue_Jay_15.mp3",
+            "Blue_Jay_2.mp3",
+            "Blue_Jay_3.mp3",
+            "Blue_Jay_4.mp3",
+            "Blue_Jay_5.mp3",
+            "Blue_Jay_6.mp3",
+            "Blue_Jay_7.mp3",
+            "Blue_Jay_8.mp3",
+            "Blue_Jay_9.mp3",
+            "Canada_Goose_0.mp3",
+            "Canada_Goose_1.mp3",
+            "Canada_Goose_2.mp3",
+            "Canada_Goose_3.mp3",
+            "Canada_Goose_4.mp3",
+            "Canada_Goose_5.mp3",
+            "Canada_Goose_6.mp3",
+            "Canada_Goose_7.mp3",
+            "Canada_Goose_8.mp3",
+            "Canada_Goose_9.mp3",
+            "Cedar_Waxwing_0.mp3",
+            "Cedar_Waxwing_1.mp3",
+            "Cedar_Waxwing_2.mp3",
+            "Cedar_Waxwing_3.mp3",
+            "Cedar_Waxwing_4.mp3",
+            "Coopers_Hawk_0.mp3",
+            "Coopers_Hawk_1.mp3",
+            "Coopers_Hawk_2.mp3",
+            "Coopers_Hawk_3.mp3",
+            "Dark-eyed_Junco_0.mp3",
+            "Dark-eyed_Junco_1.mp3",
+            "Dark-eyed_Junco_10.mp3",
+            "Dark-eyed_Junco_11.mp3",
+            "Dark-eyed_Junco_12.mp3",
+            "Dark-eyed_Junco_13.mp3",
+            "Dark-eyed_Junco_14.mp3",
+            "Dark-eyed_Junco_15.mp3",
+            "Dark-eyed_Junco_16.mp3",
+            "Dark-eyed_Junco_17.mp3",
+            "Dark-eyed_Junco_18.mp3",
+            "Dark-eyed_Junco_19.mp3",
+            "Dark-eyed_Junco_2.mp3",
+            "Dark-eyed_Junco_20.mp3",
+            "Dark-eyed_Junco_21.mp3",
+            "Dark-eyed_Junco_22.mp3",
+            "Dark-eyed_Junco_23.mp3",
+            "Dark-eyed_Junco_24.mp3",
+            "Dark-eyed_Junco_25.mp3",
+            "Dark-eyed_Junco_26.mp3",
+            "Dark-eyed_Junco_27.mp3",
+            "Dark-eyed_Junco_3.mp3",
+            "Dark-eyed_Junco_4.mp3",
+            "Dark-eyed_Junco_5.mp3",
+            "Dark-eyed_Junco_6.mp3",
+            "Dark-eyed_Junco_7.mp3",
+            "Dark-eyed_Junco_8.mp3",
+            "Dark-eyed_Junco_9.mp3",
+            "Downy_Woodpecker_0.mp3",
+            "Downy_Woodpecker_1.mp3",
+            "Downy_Woodpecker_10.mp3",
+            "Downy_Woodpecker_2.mp3",
+            "Downy_Woodpecker_3.mp3",
+            "Downy_Woodpecker_4.mp3",
+            "Downy_Woodpecker_5.mp3",
+            "Downy_Woodpecker_6.mp3",
+            "Downy_Woodpecker_7.mp3",
+            "Downy_Woodpecker_8.mp3",
+            "Downy_Woodpecker_9.mp3",
+            "Eastern_Bluebird_0.mp3",
+            "Eastern_Bluebird_1.mp3",
+            "Eastern_Bluebird_2.mp3",
+            "Eastern_Bluebird_3.mp3",
+            "Eastern_Bluebird_4.mp3",
+            "Eastern_Bluebird_5.mp3",
+            "Eastern_Bluebird_6.mp3",
+            "Eastern_Bluebird_7.mp3",
+            "Gray_Catbird_0.mp3",
+            "Gray_Catbird_1.mp3",
+            "Gray_Catbird_2.mp3",
+            "Gray_Catbird_3.mp3",
+            "Gray_Catbird_4.mp3",
+            "Gray_Catbird_5.mp3",
+            "Gray_Catbird_6.mp3",
+            "Gray_Catbird_7.mp3",
+            "Gray_Catbird_8.mp3",
+            "Great_Blue_Heron_0.mp3",
+            "Great_Blue_Heron_1.mp3",
+            "Great_Blue_Heron_2.mp3",
+            "Great_Blue_Heron_3.mp3",
+            "Great_Blue_Heron_4.mp3",
+            "Hairy_Woodpecker_0.mp3",
+            "Hairy_Woodpecker_1.mp3",
+            "Hairy_Woodpecker_10.mp3",
+            "Hairy_Woodpecker_11.mp3",
+            "Hairy_Woodpecker_12.mp3",
+            "Hairy_Woodpecker_13.mp3",
+            "Hairy_Woodpecker_14.mp3",
+            "Hairy_Woodpecker_15.mp3",
+            "Hairy_Woodpecker_16.mp3",
+            "Hairy_Woodpecker_2.mp3",
+            "Hairy_Woodpecker_3.mp3",
+            "Hairy_Woodpecker_4.mp3",
+            "Hairy_Woodpecker_5.mp3",
+            "Hairy_Woodpecker_6.mp3",
+            "Hairy_Woodpecker_7.mp3",
+            "Hairy_Woodpecker_8.mp3",
+            "Hairy_Woodpecker_9.mp3",
+            "Mallard_0.mp3",
+            "Mallard_1.mp3",
+            "Mallard_2.mp3",
+            "Mallard_3.mp3",
+            "Mallard_4.mp3",
+            "Mallard_5.mp3",
+            "Northern_Mockingbird_0.mp3",
+            "Northern_Mockingbird_1.mp3",
+            "Northern_Mockingbird_2.mp3",
+            "Northern_Mockingbird_3.mp3",
+            "Northern_Mockingbird_4.mp3",
+            "Northern_Mockingbird_5.mp3",
+            "Northern_Mockingbird_6.mp3",
+            "Red-eyed_Vireo_0.mp3",
+            "Red-eyed_Vireo_1.mp3",
+            "Red-eyed_Vireo_2.mp3",
+            "Red-eyed_Vireo_3.mp3",
+            "Red-eyed_Vireo_4.mp3",
+            "Red-eyed_Vireo_5.mp3",
+            "Red-eyed_Vireo_6.mp3",
+            "Red-eyed_Vireo_7.mp3",
+            "Red-eyed_Vireo_8.mp3",
+            "Red-tailed_Hawk_0.mp3",
+            "Red-tailed_Hawk_1.mp3",
+            "Red-tailed_Hawk_2.mp3",
+            "Red-tailed_Hawk_3.mp3",
+            "Red-tailed_Hawk_4.mp3",
+            "Red-tailed_Hawk_5.mp3",
+            "Red-tailed_Hawk_6.mp3",
+            "Tufted_Titmouse_0.mp3",
+            "Tufted_Titmouse_1.mp3",
+            "Tufted_Titmouse_10.mp3",
+            "Tufted_Titmouse_11.mp3",
+            "Tufted_Titmouse_2.mp3",
+            "Tufted_Titmouse_3.mp3",
+            "Tufted_Titmouse_4.mp3",
+            "Tufted_Titmouse_5.mp3",
+            "Tufted_Titmouse_6.mp3",
+            "Tufted_Titmouse_7.mp3",
+            "Tufted_Titmouse_8.mp3",
+            "Tufted_Titmouse_9.mp3",
+            "Turkey_Vulture_0.mp3",
+            "Wood_Thrush_0.mp3",
+            "Wood_Thrush_1.mp3",
+            "Wood_Thrush_2.mp3",
+            "Wood_Thrush_3.mp3",
+            "Wood_Thrush_4.mp3",
+            "Wood_Thrush_5.mp3",
+        ];
+
+        const audio = document.getElementById("audio");
+        const revealBtn = document.getElementById("revealBtn");
+        const trackName = document.getElementById("trackName");
+
+        let currentTrack = null;
+        let revealed = false;
+
+        function pickRandomTrack(autoplay = false) {
+            let next;
+            do {
+                next = tracks[Math.floor(Math.random() * tracks.length)];
+            } while (next === currentTrack && tracks.length > 1);
+
+            currentTrack = next;
+            audio.src = BASE_URL + currentTrack;
+            audio.load();
+
+            if (autoplay) {
+                audio.play();
+            }
+
+            trackName.textContent = "";
+            revealBtn.textContent = "Reveal";
+            revealed = false;
+        }
+
+        revealBtn.addEventListener("click", () => {
+            if (!revealed) {
+                trackName.textContent = currentTrack;
+                revealBtn.textContent = "Next";
+                revealed = true;
+            } else {
+                pickRandomTrack(true);
+            }
+        });
+
+        // Load first track immediately so the player is active
+        pickRandomTrack(false);
+    </script>
+
+</body>
+
+</html>

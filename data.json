@@ -1,1878 +1,1598 @@
 {
-    "group_1": {
-        "Great_Blue_Heron": {
-            "display_name": "Great Blue Heron",
-            "mnemonic": "rok rok rok",
-            "url": "https://www.allaboutbirds.org/guide/Great_Blue_Heron/sounds",
+    "group_2": {
+        "Bald_Eagle": {
+            "display_name": "Bald Eagle",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Bald_Eagle/sounds",
             "audios": [
                 {
                     "audio_index": 0,
                     "audio_type": "Calls",
-                    "location_timestamp": "Arizona, August 01, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549011.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/171437551",
+                    "location_timestamp": "Florida, March 30, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549106.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/92022701",
                     "credit": "Recorded by Paul Marvin / Macaulay Library"
                 },
                 {
                     "audio_index": 1,
                     "audio_type": "Calls",
-                    "location_timestamp": "Florida, January 14, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549012.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/23220471",
-                    "credit": "Recorded by Paul Marvin / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, March 03, 2007",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549013.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/135383",
-                    "credit": "Recorded by Mike Andersen / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, April 01, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549014.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/92488041",
-                    "credit": "Recorded by Paul Marvin / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Display",
-                    "location_timestamp": "Texas, April 17, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549015.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/79091",
-                    "credit": "Recorded by Martha Fischer / Macaulay Library"
-                }
-            ]
-        },
-        "Canada_Goose": {
-            "display_name": "Canada Goose",
-            "mnemonic": "honk honk honk",
-            "url": "https://www.allaboutbirds.org/guide/Canada_Goose/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 03, 1996",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547951.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/138586",
-                    "credit": "Recorded by Gregory Budney / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Washington, May 07, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547952.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/57280841",
-                    "credit": "Recorded by Phil Green / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, January 18, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547953.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/82458611",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 26, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547954.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/191029491",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Colorado, May 14, 2012",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547955.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/231229571",
-                    "credit": "Recorded by Andrew Spencer / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 16, 1957",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547956.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/3548",
-                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 18, 1957",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547957.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/3547",
-                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 16, 1957",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547958.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/3548",
-                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New Jersey, January 28, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547959.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/83784941",
-                    "credit": "Recorded by Jeff Ellerbusch / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Hiss",
-                    "location_timestamp": "Colorado, May 12, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/547960.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/245758971",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                }
-            ]
-        },
-        "Mallard": {
-            "display_name": "Mallard",
-            "mnemonic": "quack quack quack",
-            "url": "https://www.allaboutbirds.org/guide/Mallard/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Female calls",
-                    "location_timestamp": "New York, April 09, 2006",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548012.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/136504",
-                    "credit": "Recorded by Mike Andersen / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Female calls",
-                    "location_timestamp": "New York, April 08, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548013.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/93506381",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Male calls",
-                    "location_timestamp": "Nor\u00f0urland eystra, June 02, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548014.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/235502",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Female calls",
-                    "location_timestamp": "New York, August 24, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548015.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/224767",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 09, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548016.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/222001421",
-                    "credit": "Recorded by valerie heemstra / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 22, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548017.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/53484171",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Display",
-                    "location_timestamp": "New York, February 02, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548018.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/209224551",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                }
-            ]
-        },
-        "Hairy_Woodpecker": {
-            "display_name": "Hairy Woodpecker",
-            "mnemonic": "squeaky, high-pitched, rapid peek calls, no clearpattern (doesn't go down)",
-            "url": "https://www.allaboutbirds.org/guide/Hairy_Woodpecker/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, February 23, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549341.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/211302481",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "Maryland, June 08, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549342.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/85126",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "West Virginia, July 13, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549343.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/539897",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, March 05, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549344.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/213792621",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Drum (Eastern)",
-                    "location_timestamp": "New York, February 23, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549345.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/211304391",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls (Rocky Mts.)",
-                    "location_timestamp": "California, June 15, 1990",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549347.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/49075",
-                    "credit": "Recorded by Kevin J. Colver / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls (Rocky Mts.)",
-                    "location_timestamp": "California, May 30, 2002",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/522479.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/120275",
-                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls (Rocky Mts.)",
-                    "location_timestamp": "California, June 07, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549348.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/190957",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Drum (Rocky Mts.)",
-                    "location_timestamp": "California, June 06, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549349.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/181549",
-                    "credit": "Recorded by Gregory Budney / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls (Pacific)",
-                    "location_timestamp": "Oregon, June 10, 1989",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/507371.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/44942",
-                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls (Pacific)",
-                    "location_timestamp": "British Columbia, May 23, 1962",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549346.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62781",
-                    "credit": "Recorded by William W. H. Gunn / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls (South Mexican)",
-                    "location_timestamp": "Chiapas, April 17, 1993",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/536122.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/86893",
-                    "credit": "Recorded by Charles Duncan / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Calls (South Mexican)",
-                    "location_timestamp": "Oaxaca, April 04, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/215407971.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/155161851",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 13,
-                    "audio_type": "Drum (South Mexican)",
-                    "location_timestamp": "Francisco Moraz\u00e1n, December 16, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/536123.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/78328291",
-                    "credit": "Recorded by Alfonso Auerbach / Macaulay Library"
-                },
-                {
-                    "audio_index": 14,
-                    "audio_type": "Calls (Costa Rican)",
-                    "location_timestamp": "San Jos\u00e9, August 08, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/525971.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/205763",
-                    "credit": "Recorded by David L. Ross, Jr. / Macaulay Library"
-                },
-                {
-                    "audio_index": 15,
-                    "audio_type": "Calls (Costa Rican)",
-                    "location_timestamp": "San Jos\u00e9, January 24, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/525972.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/48391891",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 16,
-                    "audio_type": "Drum (Costa Rican)",
-                    "location_timestamp": "San Jos\u00e9, August 08, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/525973.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/195183",
-                    "credit": "Recorded by David L. Ross, Jr. / Macaulay Library"
-                },
-                {
-                    "audio_index": 17,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "California, June 12, 1990",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549350.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/73932101",
-                    "credit": "Recorded by Gregory Budney / Macaulay Library"
-                }
-            ]
-        },
-        "Downy_Woodpecker": {
-            "display_name": "Downy Woodpecker",
-            "mnemonic": "peek peek peek, trill that goes down in pitch",
-            "url": "https://www.allaboutbirds.org/guide/Downy_Woodpecker/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, November 18, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549312.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/75518341",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, March 24, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549313.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/147240231",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, April 30, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549314.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/155208671",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, March 24, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549315.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/147240231",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Drum (Eastern)",
-                    "location_timestamp": "Ontario, June 06, 1971",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549316.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62766",
-                    "credit": "Recorded by William W. H. Gunn / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Juvenile calls (Eastern)",
-                    "location_timestamp": "West Virginia, May 28, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549317.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/539863",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls (Rocky Mts.)",
-                    "location_timestamp": "Colorado, April 24, 2011",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549318.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/210592",
-                    "credit": "Recorded by Bruce Rideout / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls (Pacific)",
-                    "location_timestamp": "California, September 08, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549322.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/210592",
-                    "credit": "Recorded by Bruce Rideout / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Drum (Pacific)",
-                    "location_timestamp": "Oregon, May 07, 1989",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549323.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/44905",
-                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
-                }
-            ]
-        },
-        "American_Crow": {
-            "display_name": "American Crow",
-            "mnemonic": "caw! caw!",
-            "url": "https://www.allaboutbirds.org/guide/American_Crow/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, March 04, 2007",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549833.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/135405",
-                    "credit": "Recorded by Mike Andersen / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, December 09, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549834.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/229089",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, December 09, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549835.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/229089",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, July 01, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549836.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62358531",
-                    "credit": "Recorded by Paul Marvin / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maryland, July 01, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549837.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/166505971",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "California, May 20, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549838.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/159864361",
-                    "credit": "Recorded by Brian Sullivan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, May 07, 1994",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549839.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/105346",
-                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, January 27, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549840.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/177622",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 11, 2001",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549841.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/71896",
-                    "credit": "Recorded by Martha Fischer / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, February 12, 1964",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549842.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/13123",
-                    "credit": "Recorded by George B. Reynard / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "California, July 05, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549843.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/250411561",
-                    "credit": "Recorded by Paul Fenwick / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls (Pacific vocal type)",
-                    "location_timestamp": "Alaska, June 26, 2006",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549844.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/132185",
+                    "location_timestamp": "Alaska, December 07, 2014",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549107.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/200948",
                     "credit": "Recorded by Gerrit Vyn / Macaulay Library"
                 },
                 {
-                    "audio_index": 12,
-                    "audio_type": "Calls (Pacific vocal type)",
-                    "location_timestamp": "Alaska, July 02, 2015",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549845.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/207780",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 13,
-                    "audio_type": "Calls (Pacific vocal type)",
-                    "location_timestamp": "Alaska, June 10, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/538148.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/193437",
-                    "credit": "Recorded by Richard Nelson / Macaulay Library"
-                },
-                {
-                    "audio_index": 14,
-                    "audio_type": "Calls (Pacific vocal type)",
-                    "location_timestamp": "Washington, August 16, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/538149.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/32684421",
-                    "credit": "Recorded by Phil Green / Macaulay Library"
-                }
-            ]
-        },
-        "Blue_Jay": {
-            "display_name": "Blue Jay",
-            "mnemonic": "jeer, toolool",
-            "url": "https://www.allaboutbirds.org/guide/Blue_Jay/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 23, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549761.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/43998451",
-                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, May 10, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549762.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/232827071",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
                     "audio_index": 2,
                     "audio_type": "Calls",
-                    "location_timestamp": "New York, April 09, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549763.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/93737501",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, September 19, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549764.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/122601271",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Quebec, February 09, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549765.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/91010761",
-                    "credit": "Recorded by Jocelyn Lauzon / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Florida, March 30, 1962",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549766.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/13448",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, April 13, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549767.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/223205301",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 22, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549768.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/169243051",
-                    "credit": "Recorded by valerie heemstra / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 06, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549769.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/25570941",
-                    "credit": "Recorded by Martha Fischer / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maryland, February 28, 1998",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549770.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/94220",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 18, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549771.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/216524141",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, April 25, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549772.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/227078211",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 11, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549773.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/107289291",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 13,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 04, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549774.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/57450221",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 14,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, October 20, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549775.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/183200851",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 15,
-                    "audio_type": "Whisper song",
-                    "location_timestamp": "West Virginia, April 24, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549776.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/226854181",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 16,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, August 10, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549777.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/254741991",
-                    "credit": "Recorded by James Remsen / Macaulay Library"
-                }
-            ]
-        },
-        "Gray_Catbird": {
-            "display_name": "Gray Catbird",
-            "mnemonic": "meow, chatty talking to itself",
-            "url": "https://www.allaboutbirds.org/guide/Gray_Catbird/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, May 28, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/543810.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62798391",
-                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "North Dakota, July 05, 1961",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550264.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/10222",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, May 20, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550265.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/245090011",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 11, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550266.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/250375621",
-                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 09, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550267.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/57413541",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, August 26, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550268.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/175636871",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 11, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550269.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/57730041",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 15, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/543811.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/164294431",
-                    "credit": "Recorded by Simone Dena / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, September 20, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550270.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/184178341",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, June 24, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550271.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/245666201",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                }
-            ]
-        },
-        "Northern_Mockingbird": {
-            "display_name": "Northern Mockingbird",
-            "mnemonic": "many phrases repeated 3-4 times",
-            "url": "https://www.allaboutbirds.org/guide/Northern_Mockingbird/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "Maryland, July 03, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550317.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/534473",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 25, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550318.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/251148531",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "California, March 04, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550319.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/213457711",
+                    "location_timestamp": "Florida, November 27, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549108.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/41093751",
                     "credit": "Recorded by Paul Marvin / Macaulay Library"
                 },
                 {
                     "audio_index": 3,
                     "audio_type": "Calls",
-                    "location_timestamp": "New York, October 19, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550320.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/183210851",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Louisiana, March 25, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550321.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/213209",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 05, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550322.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62673441",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maryland, July 05, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550323.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/85196",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "Connecticut, July 13, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550324.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/168069831",
-                    "credit": "Recorded by valerie heemstra / Macaulay Library"
-                }
-            ]
-        },
-        "Cedar_Waxwing": {
-            "display_name": "Cedar Waxwing",
-            "mnemonic": "bzeee bzeee, like a whistle",
-            "url": "https://www.allaboutbirds.org/guide/Cedar_Waxwing/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New Hampshire, June 28, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550442.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/166156861",
-                    "credit": "Recorded by Christopher McPherson / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 04, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550443.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/184205481",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 25, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550444.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/30588971",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 02, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550445.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/61978551",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Flock calls",
-                    "location_timestamp": "New York, April 13, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550446.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/96926181",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, September 06, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550447.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/175959191",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                }
-            ]
-        },
-        "Dark-eyed_Junco": {
-            "display_name": "Dark-eyed Junco",
-            "mnemonic": "musical trill, spaceship",
-            "url": "https://www.allaboutbirds.org/guide/Dark-eyed_Junco/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song (Slate-colored)",
-                    "location_timestamp": "New York, April 24, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550821.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/27611071",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song (Slate-colored)",
-                    "location_timestamp": "New York, May 11, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550822.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/220784",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song (Slate-colored)",
-                    "location_timestamp": "New York, April 14, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550823.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/27063771",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Song (Slate-colored)",
-                    "location_timestamp": "New Hampshire, July 24, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550824.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/85243",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Song (Oregon)",
-                    "location_timestamp": "Washington, April 05, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550825.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/236790421",
-                    "credit": "Recorded by Dave Slager / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Song (Oregon)",
-                    "location_timestamp": "California, April 28, 1987",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550826.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/110986",
-                    "credit": "Recorded by Thomas G. Sander / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Song (Oregon)",
-                    "location_timestamp": "California, June 15, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550827.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/539784",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Song (Oregon)",
-                    "location_timestamp": "California, June 03, 1992",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550828.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/99343",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Song (Pink-sided)",
-                    "location_timestamp": "Wyoming, July 23, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550829.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/66043701",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Song (Pink-sided)",
-                    "location_timestamp": "Wyoming, June 18, 2010",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550830.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/172197",
-                    "credit": "Recorded by Mark Robbins / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Song (Pink-sided)",
-                    "location_timestamp": "Wyoming, June 13, 2010",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550831.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/172141",
-                    "credit": "Recorded by Mark Robbins / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Song (White-winged)",
-                    "location_timestamp": "South Dakota, June 11, 1961",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550832.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/15239",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Song (White-winged)",
-                    "location_timestamp": "South Dakota, June 11, 1961",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550833.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/15239",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 13,
-                    "audio_type": "Song (White-winged)",
-                    "location_timestamp": "South Dakota, June 11, 1961",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550834.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/15238",
-                    "credit": "Recorded by Randolph Little / Macaulay Library"
-                },
-                {
-                    "audio_index": 14,
-                    "audio_type": "Song (Gray-headed)",
-                    "location_timestamp": "Colorado, June 23, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550835.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/105345661",
-                    "credit": "Recorded by Chris Wood / Macaulay Library"
-                },
-                {
-                    "audio_index": 15,
-                    "audio_type": "Song (Gray-headed)",
-                    "location_timestamp": "Wyoming, June 05, 1997",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550836.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/138522",
-                    "credit": "Recorded by Gregory Budney / Macaulay Library"
-                },
-                {
-                    "audio_index": 16,
-                    "audio_type": "Song (Gray-headed)",
-                    "location_timestamp": "Colorado, June 28, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550837.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/105843921",
-                    "credit": "Recorded by Chris Wood / Macaulay Library"
-                },
-                {
-                    "audio_index": 17,
-                    "audio_type": "Song (Red-backed)",
-                    "location_timestamp": "New Mexico, June 18, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550838.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/246401701",
-                    "credit": "Recorded by Rose Ann Rowlett / Macaulay Library"
-                },
-                {
-                    "audio_index": 18,
-                    "audio_type": "Song (Red-backed)",
-                    "location_timestamp": "New Mexico, June 18, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550839.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/246451331",
-                    "credit": "Recorded by Rose Ann Rowlett / Macaulay Library"
-                },
-                {
-                    "audio_index": 19,
-                    "audio_type": "Song (Red-backed)",
-                    "location_timestamp": "Arizona, June 16, 2013",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550840.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/202887",
-                    "credit": "Recorded by Mark Robbins / Macaulay Library"
-                },
-                {
-                    "audio_index": 20,
-                    "audio_type": "Complex song",
-                    "location_timestamp": "New York, February 22, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550841.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/211060291",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 21,
-                    "audio_type": "Complex song",
-                    "location_timestamp": "New York, March 06, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550842.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/213806471",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 22,
-                    "audio_type": "Calls",
-                    "location_timestamp": "California, June 15, 2012",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550843.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/169731",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 23,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 10, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550844.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/93804871",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 24,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 25, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550845.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/227124441",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 25,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 01, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550846.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/212792511",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 26,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 14, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550847.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/94433671",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 27,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, November 02, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550848.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/39233771",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 28,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, June 17, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550849.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/261927621",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                }
-            ]
-        },
-        "Eastern_Bluebird": {
-            "display_name": "Eastern Bluebird",
-            "mnemonic": "cheer, cheer, cheerful charmer, tur-a-lee",
-            "url": "https://www.allaboutbirds.org/guide/Eastern_Bluebird/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song (Eastern)",
-                    "location_timestamp": "New York, April 13, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550325.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/27018561",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song (Eastern)",
-                    "location_timestamp": "Maryland, June 10, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550326.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/534419",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song (Eastern)",
-                    "location_timestamp": "Ohio, May 16, 1954",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550327.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/13553",
-                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, October 06, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550328.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/71848061",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "Florida, August 09, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550329.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/110278551",
-                    "credit": "Recorded by Paul Marvin / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, July 05, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550330.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/224671",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, July 05, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550331.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/224671",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls (Eastern)",
-                    "location_timestamp": "New York, November 04, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550332.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/74095461",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Song (Mexican)",
-                    "location_timestamp": "Arizona, May 24, 1977",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/532756.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/44361",
-                    "credit": "Recorded by Bill Roe / Macaulay Library"
-                }
-            ]
-        },
-        "American_Robin": {
-            "display_name": "American Robin",
-            "mnemonic": "cheer up, cheerily, cheerio",
-            "url": "https://www.allaboutbirds.org/guide/American_Robin/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "West Virginia, May 16, 2010",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550417.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/168300",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, April 02, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550418.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/148704811",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "Washington, April 05, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550419.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/236798101",
-                    "credit": "Recorded by Dave Slager / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, April 13, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550420.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/151051571",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Song",
-                    "location_timestamp": "West Virginia, March 14, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550421.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/215327781",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Song",
-                    "location_timestamp": "New Jersey, April 18, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550422.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/27321321",
-                    "credit": "Recorded by Tom Johnson / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 06, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550423.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/213807211",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, January 25, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550424.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/207353601",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 02, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550425.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/26488301",
-                    "credit": "Recorded by Ian Davies / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 18, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550426.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/226927171",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 04, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550427.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/156241801",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 14, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550428.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/94433591",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, October 26, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550429.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/184338071",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 13,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, October 08, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550430.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/181145651",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 14,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 04, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550431.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/221595221",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 15,
-                    "audio_type": "Alarm calls",
-                    "location_timestamp": "New York, July 30, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/541842.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/170498741",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 16,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, July 06, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550432.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/167221021",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 17,
-                    "audio_type": "Song (San Lucas)",
-                    "location_timestamp": "Baja California Sur, May 16, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/532840.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/68020331",
-                    "credit": "Recorded by Nick  Roth / Macaulay Library"
-                }
-            ]
-        },
-        "Wood_Thrush": {
-            "display_name": "Wood Thrush",
-            "mnemonic": "eeeee o layyyyyyy tingtingting",
-            "url": "https://www.allaboutbirds.org/guide/Wood_Thrush/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "Maryland, July 02, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550410.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/247001691",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 14, 2015",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550411.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/517176",
-                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 25, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550412.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/62193711",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, July 10, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550413.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/248569121",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 12, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550414.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/238435711",
-                    "credit": "Recorded by Glenn Seeholzer / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Flight calls",
-                    "location_timestamp": "New York, May 11, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550415.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/57730811",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Alarm calls",
-                    "location_timestamp": "New York, July 13, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550416.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/31258751",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                }
-            ]
-        },
-        "Tufted_Titmouse": {
-            "display_name": "Tufted Titmouse",
-            "mnemonic": "peter peter peter, many varied vocalizations",
-            "url": "https://www.allaboutbirds.org/guide/Tufted_Titmouse/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, April 24, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549946.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/96336351",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "West Virginia, May 02, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549947.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/229600341",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, March 20, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549948.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/146443311",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Song",
-                    "location_timestamp": "Georgia, April 13, 2011",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549949.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/166603",
-                    "credit": "Recorded by Robert Bethel / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 13, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549950.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/243355871",
-                    "credit": "Recorded by Andrew Spencer / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, June 15, 2014",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549951.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/192222",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, May 03, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549952.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/539655",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, April 02, 2015",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549953.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/239212",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "West Virginia, April 02, 2015",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549954.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/239211",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maryland, March 26, 1999",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549955.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/100735",
-                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 25, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549956.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/91350821",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 25, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549957.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/219459881",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "Florida, April 28, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549958.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/228435341",
-                    "credit": "Recorded by Jeff Graham / Macaulay Library"
-                }
-            ]
-        },
-        "Black-capped_Chickadee": {
-            "display_name": "Black-capped Chickadee",
-            "mnemonic": "hey sweetie, chick-a-dee-dee-dee",
-            "url": "https://www.allaboutbirds.org/guide/Black-capped_Chickadee/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, April 14, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549875.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/94959121",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "Alberta, February 23, 1977",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549876.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/58123",
-                    "credit": "Recorded by William W. H. Gunn / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "Michigan, March 19, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549877.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/104500441",
-                    "credit": "Recorded by Bob Bethune / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Song",
-                    "location_timestamp": "Washington, February 24, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549878.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/87371481",
-                    "credit": "Recorded by Dave Slager / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maine, February 24, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549879.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/87282551",
-                    "credit": "Recorded by Doug Hitchcox / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 14, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549880.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/223662831",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, December 09, 2018",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549881.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/127882631",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 13, 2010",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549882.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/199076",
-                    "credit": "Recorded by Bob McGuire / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, November 23, 2014",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549883.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/195523",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Maine, April 01, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549884.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/226833591",
-                    "credit": "Recorded by Ian Carlsen / Macaulay Library"
-                },
-                {
-                    "audio_index": 10,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, April 14, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549885.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/27063951",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 11,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, March 22, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549886.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/217850561",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 12,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, June 19, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549887.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/244792311",
-                    "credit": "Recorded by Brad Walker / Macaulay Library"
-                }
-            ]
-        },
-        "Red-eyed_Vireo": {
-            "display_name": "Red-eyed Vireo",
-            "mnemonic": "Where are you? Here I am!",
-            "url": "https://www.allaboutbirds.org/guide/Red-eyed_Vireo/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 17, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549719.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/247983971",
-                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Song",
-                    "location_timestamp": "Illinois, May 22, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549720.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/237462361",
-                    "credit": "Recorded by Matt Wistrand / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Song",
-                    "location_timestamp": "New York, June 24, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549721.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/30588621",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Complex song",
-                    "location_timestamp": "New York, June 24, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549722.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/30588591",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 4,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 26, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549723.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/251974881",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 5,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, July 20, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549724.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/63868171",
-                    "credit": "Recorded by Glen Chapman / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, August 29, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549725.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/175638101",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 18, 2015",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549726.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/202219",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 8,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, August 31, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549727.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/261240101",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 9,
-                    "audio_type": "Calls",
-                    "location_timestamp": "New York, May 21, 2016",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549728.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/29211331",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                }
-            ]
-        },
-        "Turkey_Vulture": {
-            "display_name": "Turkey Vulture",
-            "mnemonic": "hiss",
-            "url": "https://www.allaboutbirds.org/guide/Turkey_Vulture/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Hiss (Northern)",
-                    "location_timestamp": "Recorded by Greg Clark",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549071.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/64763811",
-                    "credit": "Recorded by Andrew Spencer / Macaulay Library"
-                }
-            ]
-        },
-        "Red-tailed_Hawk": {
-            "display_name": "Red-tailed Hawk",
-            "mnemonic": "keee-aaar",
-            "url": "https://www.allaboutbirds.org/guide/Red-tailed_Hawk/sounds",
-            "audios": [
-                {
-                    "audio_index": 0,
-                    "audio_type": "Calls",
-                    "location_timestamp": "California, June 04, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549134.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/241076151",
-                    "credit": "Recorded by Paul Marvin / Macaulay Library"
-                },
-                {
-                    "audio_index": 1,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Washington, May 16, 1990",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549135.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/47538",
-                    "credit": "Recorded by Dave Herr / Macaulay Library"
-                },
-                {
-                    "audio_index": 2,
-                    "audio_type": "Calls",
-                    "location_timestamp": "California, June 10, 2012",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549136.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/166694",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 3,
-                    "audio_type": "Calls",
-                    "location_timestamp": "Alaska, July 03, 2017",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549137.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/79919841",
+                    "location_timestamp": "Alaska, July 29, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549109.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/89000921",
                     "credit": "Recorded by Maureen Chambrone / Macaulay Library"
                 },
                 {
                     "audio_index": 4,
-                    "audio_type": "Display",
-                    "location_timestamp": "Washington, June 24, 2009",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549138.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/150733861",
-                    "credit": "Recorded by A H H . / Macaulay Library"
-                },
-                {
-                    "audio_index": 6,
                     "audio_type": "Juvenile calls",
-                    "location_timestamp": "New York, August 26, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549140.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/175635401",
-                    "credit": "Recorded by Jay McGowan / Macaulay Library"
-                },
-                {
-                    "audio_index": 7,
-                    "audio_type": "Juvenile calls",
-                    "location_timestamp": "Utah, July 20, 1990",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549141.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/51140",
-                    "credit": "Recorded by Kevin J. Colver / Macaulay Library"
+                    "location_timestamp": "Maryland, May 14, 1988",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549110.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/42555",
+                    "credit": "Recorded by Gregory Budney / Macaulay Library"
                 }
             ]
         },
-        "Coopers_Hawk": {
-            "display_name": "Coopers Hawk",
-            "mnemonic": "nasally cak cak cak",
-            "url": "https://www.allaboutbirds.org/guide/Coopers_Hawk/sounds",
+        "Northern_Harrier": {
+            "display_name": "Northern Harrier",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Northern_Harrier/sounds",
             "audios": [
                 {
                     "audio_index": 0,
+                    "audio_type": "Male calls",
+                    "location_timestamp": "New York, July 05, 1957",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549088.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/4321",
+                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Male calls",
+                    "location_timestamp": "Alaska, June 11, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549089.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/131486",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Female calls",
+                    "location_timestamp": "Ontario, July 03, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549090.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/248049481",
+                    "credit": "Recorded by Nicole Richardson / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Female calls",
+                    "location_timestamp": "Manitoba, January 01, 1961",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549091.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/59293",
+                    "credit": "Recorded by Cleveland P. Grant / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
                     "audio_type": "Calls",
-                    "location_timestamp": "Colorado, May 14, 2012",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549095.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/231229541",
-                    "credit": "Recorded by Andrew Spencer / Macaulay Library"
+                    "location_timestamp": "California, June 15, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549092.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/108107301",
+                    "credit": "Recorded by Jessica Metz / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, June 27, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549093.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/166068171",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, April 29, 2002",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549094.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/119477",
+                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
+                }
+            ]
+        },
+        "Great_Horned_Owl": {
+            "display_name": "Great Horned Owl",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Great_Horned_Owl/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song (Northern)",
+                    "location_timestamp": "California, April 01, 1954",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549166.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/22874",
+                    "credit": "Recorded by William R. Fish / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Duet (Northern)",
+                    "location_timestamp": "California, April 01, 1954",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/535530.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/22874",
+                    "credit": "Recorded by William R. Fish / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Duet (Tropical)",
+                    "location_timestamp": "Madre de Dios, August 06, 1994",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/535532.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/76030",
+                    "credit": "Recorded by Curtis Marantz / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Female calls (Northern)",
+                    "location_timestamp": "Connecticut, October 01, 1995",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549167.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/130776",
+                    "credit": "Recorded by Sean O'Brien / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Begging calls (Northern)",
+                    "location_timestamp": "New York, August 13, 1964",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549168.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/8380",
+                    "credit": "Recorded by David T. Spaulding / Macaulay Library"
+                }
+            ]
+        },
+        "Ruby-throated_Hummingbird": {
+            "display_name": "Ruby-throated Hummingbird",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Ruby-throated_Hummingbird/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Display",
+                    "location_timestamp": "New York, July 01, 1976",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548344.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/26295",
+                    "credit": "Recorded by Randolph Little / Macaulay Library"
                 },
                 {
                     "audio_index": 1,
                     "audio_type": "Calls",
-                    "location_timestamp": "New Mexico, June 27, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549096.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/246058791",
-                    "credit": "Recorded by Spencer Follett / Macaulay Library"
+                    "location_timestamp": "Texas, May 05, 1995",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/535882.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/105602",
+                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
                 },
                 {
                     "audio_index": 2,
                     "audio_type": "Calls",
-                    "location_timestamp": "California, June 01, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549097.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/242427461",
-                    "credit": "Recorded by Paul Fenwick / Macaulay Library"
+                    "location_timestamp": "Texas, May 05, 1995",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/535883.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/105602",
+                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
+                }
+            ]
+        },
+        "Common_Nighthawk": {
+            "display_name": "Common Nighthawk",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Common_Nighthawk/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "South Dakota, May 26, 2013",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548298.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/516720",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "California, June 16, 2008",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548299.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/73211891",
+                    "credit": "Recorded by Gregory Budney / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song and wing sound",
+                    "location_timestamp": "New York, June 18, 2009",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548300.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/224628",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
                 },
                 {
                     "audio_index": 3,
                     "audio_type": "Calls",
-                    "location_timestamp": "New Mexico, April 15, 2019",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549098.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/151224361",
-                    "credit": "Recorded by Spencer Follett / Macaulay Library"
+                    "location_timestamp": "Florida, June 08, 1962",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548301.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/5907",
+                    "credit": "Recorded by Charles A. Sutherland / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 19, 2011",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548302.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/163356",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Oregon, July 19, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/548303.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/107668",
+                    "credit": "Recorded by Todd A. Sanders / Macaulay Library"
+                }
+            ]
+        },
+        "American_Kestrel": {
+            "display_name": "American Kestrel",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/American_Kestrel/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Oregon, June 21, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549393.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/133146",
+                    "credit": "Recorded by Dave Herr / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, April 20, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549394.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/226931021",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Moraz\u00e1n, December 22, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549395.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/194787691",
+                    "credit": "Recorded by Guillermo Funes / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Washington, April 07, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549396.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/151151131",
+                    "credit": "Recorded by Jerred Seveyka / Macaulay Library"
                 },
                 {
                     "audio_index": 4,
                     "audio_type": "Juvenile calls",
-                    "location_timestamp": "New Mexico, July 10, 2020",
-                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549099.mp3",
-                    "credit_link": "https://macaulaylibrary.org/audio/248616111",
+                    "location_timestamp": "California, May 15, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549397.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/239785861",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls (Hispaniolan)",
+                    "location_timestamp": "La Altagracia, January 12, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549398.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/180800331",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls (South American)",
+                    "location_timestamp": "Rio Grande do Sul, December 09, 1996",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/531666.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/91064",
+                    "credit": "Recorded by Glayson Bencke / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Calls (South American)",
+                    "location_timestamp": "Neuqu\u00e9n, December 24, 2010",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/531667.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/220294",
+                    "credit": "Recorded by Natxo Areta / Macaulay Library"
+                }
+            ]
+        },
+        "Veery": {
+            "display_name": "Veery",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Veery/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, June 15, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550361.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/164359471",
+                    "credit": "Recorded by Roselvy Ju\u00e1rez / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "Maryland, June 07, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550362.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/94386",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song and calls",
+                    "location_timestamp": "New York, July 08, 1960",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550363.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/3655",
+                    "credit": "Recorded by Robert C. Stein / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song and calls",
+                    "location_timestamp": "New York, July 07, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550364.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/180687041",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 04, 2011",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550365.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/163348",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 16, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550366.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/243935111",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Illinois, May 25, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550367.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/160810871",
+                    "credit": "Recorded by Matt Wistrand / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 10, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550368.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/57507221",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 11, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550369.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/112130",
+                    "credit": "Recorded by Charles Duncan / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Alarm calls",
+                    "location_timestamp": "New Hampshire, June 26, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550370.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/245873751",
+                    "credit": "Recorded by Christopher McPherson / Macaulay Library"
+                }
+            ]
+        },
+        "Swainsons_Thrush": {
+            "display_name": "Swainsons Thrush",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Swainsons_Thrush/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song (Russet-backed)",
+                    "location_timestamp": "California, July 08, 2001",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550386.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/119447",
+                    "credit": "Recorded by Geoffrey A. Keller / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song (Russet-backed)",
+                    "location_timestamp": "Oregon, July 23, 1990",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550387.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/84225",
+                    "credit": "Recorded by Kim Nelson / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Calls (Russet-backed)",
+                    "location_timestamp": "California, May 08, 1988",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550388.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/111048",
+                    "credit": "Recorded by Thomas G. Sander / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls (Russet-backed)",
+                    "location_timestamp": "California, May 08, 1988",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550389.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/111048",
+                    "credit": "Recorded by Thomas G. Sander / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls (Russet-backed)",
+                    "location_timestamp": "California, July 09, 1987",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550390.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/110994",
+                    "credit": "Recorded by Thomas G. Sander / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls (Russet-backed)",
+                    "location_timestamp": "Oregon, May 31, 1995",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550391.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/106689",
+                    "credit": "Recorded by Randolph Little / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Flight calls (Russet-backed)",
+                    "location_timestamp": "California, May 02, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550392.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/229755881",
+                    "credit": "Recorded by Paul Fenwick / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Song (Olive-backed)",
+                    "location_timestamp": "New York, May 30, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550393.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/93794",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Song (Olive-backed)",
+                    "location_timestamp": "Maryland, May 16, 1999",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550394.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/100823",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Calls (Olive-backed)",
+                    "location_timestamp": "Alaska, June 08, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550395.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/130994",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Calls (Olive-backed)",
+                    "location_timestamp": "New York, July 19, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550396.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/251346061",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 11,
+                    "audio_type": "Calls (Olive-backed)",
+                    "location_timestamp": "Alaska, June 09, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550397.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207148",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 12,
+                    "audio_type": "Calls (Olive-backed)",
+                    "location_timestamp": "Missouri, April 27, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550398.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/227846431",
                     "credit": "Recorded by Marky Mutchler / Macaulay Library"
+                },
+                {
+                    "audio_index": 13,
+                    "audio_type": "Alarm calls (Olive-backed)",
+                    "location_timestamp": "Nova Scotia, June 21, 1999",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550399.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/100898",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                }
+            ]
+        },
+        "Hermit_Thrush": {
+            "display_name": "Hermit Thrush",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Hermit_Thrush/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "Quebec, June 17, 2007",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550400.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/136174",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "British Columbia, June 19, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550401.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/244536281",
+                    "credit": "Recorded by Mark Gardiner / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "Arizona, June 30, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550402.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/247555181",
+                    "credit": "Recorded by Rose Ann Rowlett / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "West Virginia, November 19, 2000",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550403.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/107506",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 13, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550404.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/244251871",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Arizona, March 14, 2010",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550405.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/197960",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 13, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550406.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/244252391",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "Alaska, May 12, 2013",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550407.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/194988",
+                    "credit": "Recorded by Lucas DeCicco / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "New York, October 14, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550408.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/118921481",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Alarm calls",
+                    "location_timestamp": "New York, June 13, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550409.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/244251811",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                }
+            ]
+        },
+        "Baltimore_Oriole": {
+            "display_name": "Baltimore Oriole",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Baltimore_Oriole/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 21, 2000",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551140.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/103209",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 18, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551141.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/202209",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 12, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551142.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/57843851",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 23, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551143.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/160476031",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Complex song",
+                    "location_timestamp": "New York, May 04, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551144.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/156243721",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Song and calls",
+                    "location_timestamp": "New York, May 13, 1998",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551145.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/93753",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 10, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551146.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/57507161",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Female song",
+                    "location_timestamp": "New York, May 23, 1952",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/538316.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/12479",
+                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Calls",
+                    "location_timestamp": "West Virginia, May 04, 2010",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551147.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/240416651",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 12, 2009",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551149.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/219606",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 11,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 14, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551150.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/245585451",
+                    "credit": "Recorded by Glenn Seeholzer / Macaulay Library"
+                },
+                {
+                    "audio_index": 12,
+                    "audio_type": "Calls",
+                    "location_timestamp": "West Virginia, May 04, 2010",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551151.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/104890281",
+                    "credit": "Recorded by Ana Paula Oxom / Macaulay Library"
+                }
+            ]
+        },
+        "Common_Grackle": {
+            "display_name": "Common Grackle",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Common_Grackle/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, April 14, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551218.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/27064211",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, April 06, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551219.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/149486391",
+                    "credit": "Recorded by Glen Chapman / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, April 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551220.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/213616",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, April 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551221.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/213615",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Florida, April 01, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551222.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/92475641",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, March 22, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551223.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/217382661",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, April 21, 1958",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551224.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/12664",
+                    "credit": "Recorded by Arthur A. Allen / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, April 04, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551225.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/221077981",
+                    "credit": "Recorded by Chris Wood / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, April 10, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551226.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/26918651",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, March 23, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551227.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/217634421",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Juvenile calls",
+                    "location_timestamp": "New York, May 21, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551228.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/244859101",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                }
+            ]
+        },
+        "Common_Yellowthroat": {
+            "display_name": "Common Yellowthroat",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Common_Yellowthroat/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, June 24, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551393.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/245666251",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 21, 2011",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551394.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/163337",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "Alaska, June 02, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551395.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/206451",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "Texas, July 24, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551396.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/32206081",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Song",
+                    "location_timestamp": "California, June 27, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551397.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/246026251",
+                    "credit": "Recorded by Bruce Rideout / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Flight song",
+                    "location_timestamp": "New York, July 12, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551398.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/31258291",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, August 31, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551399.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/261240601",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "New York, August 30, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551400.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/175641321",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "New York, August 31, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551401.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/174961451",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "New York, August 04, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551402.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/171116531",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 19, 2009",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551403.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/219656",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 11,
+                    "audio_type": "Tink calls",
+                    "location_timestamp": "New York, May 31, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551404.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/240085121",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 12,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "New York, September 05, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551405.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/175737031",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                }
+            ]
+        },
+        "American_Redstart": {
+            "display_name": "American Redstart",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/American_Redstart/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 18, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551413.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/159954641",
+                    "credit": "Recorded by Luciana Andrade / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "West Virginia, May 27, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551414.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/239388501",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, June 09, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551415.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/215506821",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 13, 2010",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551416.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/199083",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Dawn song",
+                    "location_timestamp": "West Virginia, May 23, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551417.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/237767661",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Female song",
+                    "location_timestamp": "New York, June 17, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551418.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/61818381",
+                    "credit": "Recorded by John van Dort / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "West Virginia, May 10, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551419.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/232876111",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Tink calls",
+                    "location_timestamp": "Florida, August 01, 1985",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551420.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/36969",
+                    "credit": "Recorded by Oliver H. Hewitt / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "New York, September 15, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551421.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/179203141",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                }
+            ]
+        },
+        "Black-throated_Blue_Warbler": {
+            "display_name": "Black-throated Blue Warbler",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Black-throated_Blue_Warbler/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "West Virginia, May 26, 2000",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551489.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/107391",
+                    "credit": "Recorded by Wil Hershberger / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 26, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551490.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/243046441",
+                    "credit": "Recorded by Glen Chapman / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 31, 2004",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551491.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/120458",
+                    "credit": "Recorded by Martha Fischer / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 24, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551492.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/238273751",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "New York, June 29, 2013",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551493.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/177621",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Tink calls",
+                    "location_timestamp": "New Hampshire, July 03, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551494.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/166767171",
+                    "credit": "Recorded by Christopher McPherson / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 18, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551495.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/236290501",
+                    "credit": "Recorded by Matt SM / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "Maryland, September 30, 1994",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551496.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/76798121",
+                    "credit": "Recorded by Michael O'Brien / Macaulay Library"
+                }
+            ]
+        },
+        "Northern_Parula": {
+            "display_name": "Northern Parula",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Northern_Parula/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, June 09, 2012",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551439.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/169040",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 05, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551440.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/234367151",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "Louisiana, March 25, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551441.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/26941511",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "Arkansas, March 23, 2005",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551442.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/128913",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Dawn song",
+                    "location_timestamp": "Florida, May 03, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551443.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/97879431",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Chip calls",
+                    "location_timestamp": "Florida, May 01, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551444.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/97475581",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Flight calls",
+                    "location_timestamp": "New York, October 05, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/551445.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/180705151",
+                    "credit": "Recorded by Brad Walker / Macaulay Library"
+                }
+            ]
+        },
+        "Common_Raven": {
+            "display_name": "Common Raven",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Common_Raven/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Texas, December 23, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549855.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/22594021",
+                    "credit": "Recorded by Jessie Barry / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, June 20, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549856.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/165054401",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, January 20, 2013",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549857.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/210582",
+                    "credit": "Recorded by Bruce Rideout / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Alaska, June 02, 2007",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549858.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/137574",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, June 26, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549859.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/62187121",
+                    "credit": "Recorded by Chris Wood / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, March 12, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549860.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/25670251",
+                    "credit": "Recorded by Lance Benner / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Nor\u00f0urland eystra, May 30, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549861.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/142617281",
+                    "credit": "Recorded by Andrew Spencer / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, March 12, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549862.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/25665171",
+                    "credit": "Recorded by Lance Benner / Macaulay Library"
+                }
+            ]
+        },
+        "Eastern_Warbling_Vireo": {
+            "display_name": "Eastern Warbling Vireo",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Eastern_Warbling_Vireo/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 23, 2014",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549707.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/195761",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, May 29, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549708.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/242433021",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, September 09, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549709.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/116288701",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, July 06, 2014",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549710.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/22449781",
+                    "credit": "Recorded by Matthew D. Medler / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 22, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549711.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/239654581",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, May 22, 2020",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549712.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/239654581",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                }
+            ]
+        },
+        "Horned_Lark": {
+            "display_name": "Horned Lark",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Horned_Lark/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "Alaska, June 05, 1971",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549976.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/49589",
+                    "credit": "Recorded by Leonard J. Peyton / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "Newfoundland and Labrador, July 11, 2007",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549977.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/134110",
+                    "credit": "Recorded by Martha Fischer / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, March 09, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549978.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/144525711",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Song",
+                    "location_timestamp": "California, April 15, 1986",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549979.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/110927",
+                    "credit": "Recorded by Thomas G. Sander / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Song",
+                    "location_timestamp": "Colorado, April 18, 2014",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549980.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/191754",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, March 31, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549981.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/102880631",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "New York, March 09, 2019",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549982.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/144525711",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Alaska, June 22, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549983.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207715",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Montana, July 26, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549984.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/66391021",
+                    "credit": "Recorded by Jay McGowan / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Calls",
+                    "location_timestamp": "California, March 31, 2012",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549985.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/189315",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Arizona, January 11, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/549986.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/113695211",
+                    "credit": "Recorded by Paul Marvin / Macaulay Library"
+                },
+                {
+                    "audio_index": 11,
+                    "audio_type": "Song (Mexican)",
+                    "location_timestamp": "Oaxaca, May 28, 1961",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/532674.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/8025",
+                    "credit": "Recorded by L. Irby Davis / Macaulay Library"
+                },
+                {
+                    "audio_index": 12,
+                    "audio_type": "Calls (Mexican)",
+                    "location_timestamp": "Estado de M\u00e9xico, August 18, 2017",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/532675.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/66388201",
+                    "credit": "Recorded by manuel grosselet / Macaulay Library"
+                },
+                {
+                    "audio_index": 13,
+                    "audio_type": "Song (Brandt's)",
+                    "location_timestamp": "Dundgovi, June 08, 2009",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/540562.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/191490",
+                    "credit": "Recorded by Peter Hosner / Macaulay Library"
+                }
+            ]
+        },
+        "Snow_Bunting": {
+            "display_name": "Snow Bunting",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Snow_Bunting/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song",
+                    "location_timestamp": "Alaska, June 04, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550669.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/130973",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song",
+                    "location_timestamp": "Nunavut, June 26, 1961",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550670.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/57586",
+                    "credit": "Recorded by Donald R. Gunn / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song",
+                    "location_timestamp": "New York, March 03, 1989",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550671.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/41835",
+                    "credit": "Recorded by William Evans / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Saskatchewan, April 04, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550672.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/93401111",
+                    "credit": "Recorded by John Patterson / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Saskatchewan, April 04, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550673.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/93401111",
+                    "credit": "Recorded by John Patterson / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Alaska, June 05, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550674.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/130980",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Calls",
+                    "location_timestamp": "Nunavut, June 11, 2008",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550675.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/138256",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                }
+            ]
+        },
+        "Redpoll": {
+            "display_name": "Redpoll",
+            "mnemonic": "",
+            "url": "https://www.allaboutbirds.org/guide/Redpoll/sounds",
+            "audios": [
+                {
+                    "audio_index": 0,
+                    "audio_type": "Song (Common)",
+                    "location_timestamp": "Alaska, June 27, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550564.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/132228",
+                    "credit": "Recorded by Mike Andersen / Macaulay Library"
+                },
+                {
+                    "audio_index": 1,
+                    "audio_type": "Song (Common)",
+                    "location_timestamp": "Alaska, June 01, 2016",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550565.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/303245",
+                    "credit": "Recorded by Peter Boesman / Macaulay Library"
+                },
+                {
+                    "audio_index": 2,
+                    "audio_type": "Song (Common)",
+                    "location_timestamp": "Nor\u00f0urland eystra, June 01, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550566.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/235459",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 3,
+                    "audio_type": "Calls (Common)",
+                    "location_timestamp": "Alaska, June 23, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550567.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/132166",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 4,
+                    "audio_type": "Calls (Common)",
+                    "location_timestamp": "British Columbia, March 25, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550568.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/91588151",
+                    "credit": "Recorded by Ian Routley / Macaulay Library"
+                },
+                {
+                    "audio_index": 5,
+                    "audio_type": "Flight calls (Common)",
+                    "location_timestamp": "Nor\u00f0urland eystra, June 01, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550569.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/235457",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 6,
+                    "audio_type": "Flight calls (Common)",
+                    "location_timestamp": "Quebec, June 19, 1975",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550570.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/74437",
+                    "credit": "Recorded by Henri Ouellet / Macaulay Library"
+                },
+                {
+                    "audio_index": 7,
+                    "audio_type": "Juvenile calls (Common)",
+                    "location_timestamp": "Nor\u00f0urland eystra, June 01, 2018",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550571.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/235463",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 8,
+                    "audio_type": "Song (Lesser)",
+                    "location_timestamp": "England, June 01, 1975",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/552997.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/145743011",
+                    "credit": "Recorded by David Sutton / Macaulay Library"
+                },
+                {
+                    "audio_index": 9,
+                    "audio_type": "Calls (Lesser)",
+                    "location_timestamp": "Vlaanderen, September 30, 2007",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/552998.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/304570",
+                    "credit": "Recorded by Peter Boesman / Macaulay Library"
+                },
+                {
+                    "audio_index": 10,
+                    "audio_type": "Calls (Lesser)",
+                    "location_timestamp": "Wallonie, March 22, 2021",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/552999.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/318921611",
+                    "credit": "Recorded by Peter Boesman / Macaulay Library"
+                },
+                {
+                    "audio_index": 11,
+                    "audio_type": "Calls (Lesser)",
+                    "location_timestamp": "Wallonie, March 22, 2021",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/553000.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/318921611",
+                    "credit": "Recorded by Peter Boesman / Macaulay Library"
+                },
+                {
+                    "audio_index": 12,
+                    "audio_type": "Song (Hoary)",
+                    "location_timestamp": "Alaska, June 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550572.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207109",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 13,
+                    "audio_type": "Song (Hoary)",
+                    "location_timestamp": "Alaska, June 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550573.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207106",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 14,
+                    "audio_type": "Song (Hoary)",
+                    "location_timestamp": "Alaska, March 11, 2013",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550574.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/194974",
+                    "credit": "Recorded by Lucas DeCicco / Macaulay Library"
+                },
+                {
+                    "audio_index": 15,
+                    "audio_type": "Calls (Hoary)",
+                    "location_timestamp": "Alaska, June 07, 2009",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550575.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/141092",
+                    "credit": "Recorded by Benjamin Clock / Macaulay Library"
+                },
+                {
+                    "audio_index": 16,
+                    "audio_type": "Calls (Hoary)",
+                    "location_timestamp": "Alaska, June 19, 2006",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550576.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/132135",
+                    "credit": "Recorded by Gerrit Vyn / Macaulay Library"
+                },
+                {
+                    "audio_index": 17,
+                    "audio_type": "Flight calls (Hoary)",
+                    "location_timestamp": "Alaska, June 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550577.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207112",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
+                },
+                {
+                    "audio_index": 18,
+                    "audio_type": "Flight calls (Hoary)",
+                    "location_timestamp": "Alaska, June 07, 2015",
+                    "link": "https://www.allaboutbirds.org/guide/assets/sound/550578.mp3",
+                    "credit_link": "https://macaulaylibrary.org/audio/207112",
+                    "credit": "Recorded by Bob McGuire / Macaulay Library"
                 }
             ]
         }

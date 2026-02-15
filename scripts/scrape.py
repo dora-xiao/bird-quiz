@@ -33,6 +33,8 @@ def scrape_audio_data(birds: dict[str, dict], groups: list[str]) -> dict[str, di
 
     results = defaultdict(dict)
     for group, birds in BIRDS.items():
+        if group not in groups:
+            continue
         print(f"Group: {group}")
         for url_name, mnemonic in birds.items():
             url = f"https://www.allaboutbirds.org/guide/{url_name}/sounds"
@@ -85,10 +87,31 @@ BIRDS = {
         "Red-tailed_Hawk": "keee-aaar",
         "Coopers_Hawk": "nasally cak cak cak",
     },
-    "group_2": {} # TODO: add birds here as needed
+    "group_2": {
+        "Bald_Eagle": "",
+        "Northern_Harrier": "",
+        "Great_Horned_Owl": "",
+        "Ruby-throated_Hummingbird": "",
+        "Common_Nighthawk": "",
+        "American_Kestrel": "",
+        "Veery": "",
+        "Swainsons_Thrush": "",
+        "Hermit_Thrush": "",
+        "Baltimore_Oriole": "",
+        "Common_Grackle": "",
+        "Common_Yellowthroat": "",
+        "American_Redstart": "",
+        "Black-throated_Blue_Warbler": "",
+        "Northern_Parula": "",
+        "Common_Raven": "",
+        "Eastern_Warbling_Vireo": "",
+        "Horned_Lark": "",
+        "Snow_Bunting": "",
+        "Redpoll": "",
+    }
 }
 
 if __name__ == "__main__":
-    data = scrape_audio_data(BIRDS, groups=["group_1"])
+    data = scrape_audio_data(BIRDS, groups=["group_2"])
     with open("data.json", "w") as f:
         json.dump(data, f, indent=4)

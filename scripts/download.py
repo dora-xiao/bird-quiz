@@ -61,8 +61,8 @@ headers = {
 for group, birds in data.items():
     for url_name, bird_data in birds.items():
         for audio in bird_data["audios"]:
-            if not audio["selected"]:
-                continue
+            # if not audio["selected"]:
+            #     continue
 
             audio_index = audio["audio_index"]
             base_url = audio["link"]

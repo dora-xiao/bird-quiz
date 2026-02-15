@@ -801,7 +801,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551218.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/27064211",
                 "credit": "Recorded by Jay McGowan / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 1,
@@ -810,7 +810,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551219.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/149486391",
                 "credit": "Recorded by Glen Chapman / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 2,
@@ -819,7 +819,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551220.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/213616",
                 "credit": "Recorded by Bob McGuire / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 3,
@@ -864,7 +864,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551225.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/221077981",
                 "credit": "Recorded by Chris Wood / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 8,
@@ -873,7 +873,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551226.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/26918651",
                 "credit": "Recorded by Jay McGowan / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 9,
@@ -882,7 +882,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551227.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/217634421",
                 "credit": "Recorded by Jay McGowan / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 10,
@@ -891,7 +891,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551228.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/244859101",
                 "credit": "Recorded by Brad Walker / Macaulay Library",
-                "selected": true
+                "selected": false
             }
         ]
     },

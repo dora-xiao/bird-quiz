@@ -7,7 +7,6 @@
     <title>Audio Quiz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
-        /* ===== Base ===== */
         *,
         *::before,
         *::after {
@@ -20,7 +19,7 @@
             margin: 0;
             background: #1c1c2a;
             color: #fff;
-            font-family: system-ui, sans-serif
+            font-family: system-ui, sans-serif;
         }
 
         .container {
@@ -32,12 +31,12 @@
             gap: 16px;
             align-items: center;
             padding: 30px;
-            justify-content: center
+            justify-content: center;
         }
 
         audio {
             width: 100%;
-            height: 40px
+            height: 40px;
         }
 
         .reveal-card {
@@ -46,7 +45,7 @@
             background: #2f2f4f;
             border-radius: 20px;
             padding: 16px;
-            position: relative
+            position: relative;
         }
 
         button {
@@ -59,18 +58,18 @@
             color: #ececec;
             border: none;
             cursor: pointer;
-            transition: .2s
+            transition: .2s;
         }
 
         button:hover {
-            background: #5a5aba
+            background: #5a5aba;
         }
 
         .track-text strong {
             display: block;
             font-size: 20px;
             margin-bottom: 16px;
-            color: #ececec
+            color: #ececec;
         }
 
         .track-text .info,
@@ -78,7 +77,7 @@
             font-size: 14px;
             color: #d0d0d0;
             display: block;
-            margin-top: 6px
+            margin-top: 6px;
         }
 
         .settings {
@@ -88,14 +87,13 @@
             cursor: pointer;
             color: #a2a2ae;
             z-index: 1100;
-            transition: .2s
+            transition: .2s;
         }
 
         .settings:hover {
-            color: #5a5aba
+            color: #5a5aba;
         }
 
-        /* ===== Settings Overlay ===== */
         #settings-page {
             position: fixed;
             inset: 0;
@@ -104,7 +102,7 @@
             display: none;
             align-items: center;
             justify-content: center;
-            z-index: 1000
+            z-index: 1000;
         }
 
         .settings-panel {
@@ -117,7 +115,7 @@
             color: #000;
             display: flex;
             flex-direction: column;
-            gap: 16px
+            gap: 16px;
         }
 
         .group-header {
@@ -127,11 +125,11 @@
             border-radius: 10px;
             cursor: pointer;
             display: flex;
-            justify-content: space-between
+            justify-content: space-between;
         }
 
         .group-header:hover {
-            background: #3b3b6b
+            background: #3b3b6b;
         }
 
         .group-options {
@@ -141,7 +139,7 @@
             padding: 8px;
             display: none;
             max-height: 260px;
-            overflow-y: auto
+            overflow-y: auto;
         }
 
         .option {
@@ -150,25 +148,25 @@
             gap: 10px;
             padding: 8px;
             border-radius: 8px;
-            cursor: pointer
+            cursor: pointer;
         }
 
         .option:hover {
-            background: #e4e4ee
+            background: #e4e4ee;
         }
 
         .option i {
             width: 18px;
-            color: #5a5aba
+            color: #5a5aba;
         }
 
         .control {
-            font-weight: 600
+            font-weight: 600;
         }
 
         #revealBtn {
             width: 8ch;
-            text-align: center
+            text-align: center;
         }
     </style>
 </head>
@@ -191,41 +189,36 @@
     <script>
         const BASE_URL = "https://dora-xiao.github.io/bird-quiz/";
         const GROUPS = ["group_1", "group_2"];
-
-        let groups = {}, tracks = [], queue = [], currentTrack = null, revealed = false, recentHistory = [], openGroups = new Set(), settingsOpen = false;
+        let groups = {}, tracks = [], queue = [], recentHistory = [], currentTrack = null, revealed = false, openGroups = new Set(), settingsOpen = false;
 
         // Elements
+        const settingsPage = document.getElementById("settings-page");
+        const settingsBtn = document.getElementById("settingsBtn");
         const audio = document.getElementById("audio");
         const revealBtn = document.getElementById("revealBtn");
         const trackName = document.getElementById("trackName");
-        const settingsBtn = document.getElementById("settingsBtn");
-        const settingsPage = document.getElementById("settings-page");
         const panel = settingsPage.querySelector(".settings-panel");
 
         // ----- Persistence -----
         function saveSelections() {
-            // store only selection state
-            const selectionData = {};
-            for (const [groupName, birds] of Object.entries(groups)) {
-                selectionData[groupName] = birds.map(bird => ({
-                    audios: bird.audios.map(a => ({ selected: a.selected }))
-                }));
+            const sel = {};
+            for (const [group, birds] of Object.entries(groups)) {
+                sel[group] = birds.map(b => ({ enabled: b.enabled }));
             }
-            localStorage.setItem("birdSelectionsAudio", JSON.stringify(selectionData));
+            localStorage.setItem("birdSelectionsAudio", JSON.stringify(sel));
         }
 
         function loadSelections() {
             const saved = localStorage.getItem("birdSelectionsAudio");
-            if (!saved) return;
-            const parsed = JSON.parse(saved);
-            for (const [groupName, birds] of Object.entries(parsed)) {
-                if (!groups[groupName]) continue;
-                birds.forEach((birdSaved, i) => {
-                    if (!groups[groupName][i]) return;
-                    groups[groupName][i].audios.forEach((a, j) => {
-                        if (birdSaved.audios[j]) a.selected = birdSaved.audios[j].selected;
-                    });
-                });
+            if (saved) {
+                const parsed = JSON.parse(saved);
+                for (const g in parsed) {
+                    if (groups[g]) {
+                        groups[g].forEach((b, i) => {
+                            if (parsed[g][i]) b.enabled = parsed[g][i].enabled;
+                        });
+                    }
+                }
             }
         }
 
@@ -234,14 +227,36 @@
             for (const group of GROUPS) {
                 const res = await fetch(`${BASE_URL}${group}/audio_data.json`);
                 const data = await res.json();
-                groups[group] = Object.values(data);
+                groups[group] = Object.values(data).map(bird => ({
+                    display_name: bird.display_name,
+                    audios: bird.audios.filter(a => a.selected).map(a => ({
+                        ...a,
+                        enabled: true,
+                        display_name: bird.display_name,
+                        group: group,
+                        src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${a.audio_index}.mp3`
+                    }))
+                }));
             }
             loadSelections();
             rebuildTracks();
             refreshSettings();
-            revealBtn.disabled = false;
-            revealBtn.textContent = "Reveal";
-            pickRandomTrack(false);
+            revealBtn.disabled = tracks.length === 0;
+            revealBtn.textContent = tracks.length ? "Reveal" : "No audios available";
+            if (tracks.length) pickRandomTrack(false);
+        }
+
+        // ----- Build tracks list -----
+        function rebuildTracks() {
+            tracks = [];
+            for (const birds of Object.values(groups)) {
+                for (const bird of birds) {
+                    for (const a of bird.audios) {
+                        if (a.enabled) tracks.push(a);
+                    }
+                }
+            }
+            queue = shuffleArray(tracks);
         }
 
         // ----- Shuffle helper -----
@@ -254,28 +269,6 @@
             return copy;
         }
 
-        // ----- Rebuild tracks -----
-        function rebuildTracks() {
-            tracks = [];
-            for (const birds of Object.values(groups)) {
-                for (const bird of birds) {
-                    for (const a of bird.audios) {
-                        if (a.selected) {
-                            tracks.push({
-                                display_name: bird.display_name,
-                                audio_type: a.audio_type,
-                                location: a.location_timestamp,
-                                credit: a.credit,
-                                credit_link: a.credit_link,
-                                src: `${BASE_URL}${findGroupOfBird(bird)}/audios/${bird.display_name.replace(/ /g, "_")}_${a.audio_index}.mp3`
-                            });
-                        }
-                    }
-                }
-            }
-            queue = shuffleArray(tracks);
-        }
-
         // ----- Pick random track -----
         function pickRandomTrack(autoplay = true) {
             if (!tracks.length) return;
@@ -283,12 +276,12 @@
                 const eligible = tracks.filter(t => !recentHistory.includes(t));
                 queue = shuffleArray(eligible.length ? eligible : tracks);
             }
-
             currentTrack = queue.shift();
             audio.src = currentTrack.src;
             audio.load();
-            if (autoplay) audio.play().catch(() => { });
-
+            if (autoplay) {
+                audio.play().catch(() => { pickRandomTrack(true); });
+            }
             trackName.innerHTML = "";
             revealed = false;
             revealBtn.textContent = "Reveal";
@@ -297,21 +290,14 @@
             if (recentHistory.length > 3) recentHistory.shift();
         }
 
-        function findGroupOfBird(birdObj) {
-            for (const [groupName, birds] of Object.entries(groups)) {
-                if (birds.includes(birdObj)) return groupName;
-            }
-            return GROUPS[0];
-        }
-
         // ----- Reveal button -----
         revealBtn.addEventListener("click", () => {
             if (!currentTrack) return;
             if (!revealed) {
                 trackName.innerHTML = `
             <strong>${currentTrack.display_name}</strong>
-            <div class="info">${currentTrack.audio_type}</div>
-            <div class="info">${currentTrack.location}</div>
+            <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
+            <div class="info">${currentTrack.location_timestamp}</div>
             <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
         `;
                 revealBtn.textContent = "Next";
@@ -320,6 +306,10 @@
                 pickRandomTrack(true);
             }
         });
+
+        function toTitleCase(str) {
+            return str.replace(/\w\S*/g, t => t[0].toUpperCase() + t.slice(1));
+        }
 
         // ----- Settings UI -----
         function refreshSettings() {
@@ -331,7 +321,6 @@
                 const header = document.createElement("div");
                 header.className = "group-header";
                 header.innerHTML = `<span>${groupName.replace("_", " ")}</span><i class="fa-solid fa-chevron-down"></i>`;
-
                 const options = document.createElement("div");
                 options.className = "group-options";
                 if (openGroups.has(groupName)) options.style.display = "block";
@@ -342,22 +331,21 @@
                 };
 
                 options.appendChild(makeControl("Select all", () => {
-                    birds.forEach(b => b.audios.forEach(a => a.selected = true));
+                    birds.forEach(b => b.audios.forEach(a => a.enabled = true));
                     rebuildTracks(); saveSelections(); refreshSettings();
                 }));
                 options.appendChild(makeControl("Deselect all", () => {
-                    birds.forEach(b => b.audios.forEach(a => a.selected = false));
+                    birds.forEach(b => b.audios.forEach(a => a.enabled = false));
                     rebuildTracks(); saveSelections(); refreshSettings();
                 }));
 
                 birds.forEach(bird => {
                     const opt = document.createElement("div");
                     opt.className = "option";
-                    const selected = bird.audios.some(a => a.selected);
-                    opt.innerHTML = `<i class="fa-${selected ? "solid" : "regular"} fa-square-check"></i>${bird.display_name}`;
+                    opt.innerHTML = `<i class="fa-${bird.audios.every(a => a.enabled) ? "solid" : "regular"} fa-square-check"></i>${bird.display_name}`;
                     opt.onclick = () => {
-                        const nowSelected = !bird.audios.every(a => a.selected);
-                        bird.audios.forEach(a => a.selected = nowSelected);
+                        const newState = !bird.audios.every(a => a.enabled);
+                        bird.audios.forEach(a => a.enabled = newState);
                         rebuildTracks(); saveSelections(); refreshSettings();
                     };
                     options.appendChild(opt);
@@ -387,6 +375,7 @@
         // ----- Init -----
         loadTracks();
     </script>
+
 </body>
 
 </html>

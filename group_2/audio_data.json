@@ -1207,7 +1207,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551440.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/234367151",
                 "credit": "Recorded by Jay McGowan / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 2,
@@ -1216,7 +1216,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551441.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/26941511",
                 "credit": "Recorded by Brad Walker / Macaulay Library",
-                "selected": false
+                "selected": true
             },
             {
                 "audio_index": 3,
@@ -1225,7 +1225,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551442.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/128913",
                 "credit": "Recorded by Gerrit Vyn / Macaulay Library",
-                "selected": false
+                "selected": true
             },
             {
                 "audio_index": 4,
@@ -1234,7 +1234,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551443.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/97879431",
                 "credit": "Recorded by Paul Marvin / Macaulay Library",
-                "selected": false
+                "selected": true
             },
             {
                 "audio_index": 5,
@@ -1252,7 +1252,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/551445.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/180705151",
                 "credit": "Recorded by Brad Walker / Macaulay Library",
-                "selected": true
+                "selected": false
             }
         ]
     },
@@ -1313,7 +1313,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/549860.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/25670251",
                 "credit": "Recorded by Lance Benner / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 6,
@@ -1322,7 +1322,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/549861.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/142617281",
                 "credit": "Recorded by Andrew Spencer / Macaulay Library",
-                "selected": true
+                "selected": false
             },
             {
                 "audio_index": 7,
@@ -1331,7 +1331,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/549862.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/25665171",
                 "credit": "Recorded by Lance Benner / Macaulay Library",
-                "selected": true
+                "selected": false
             }
         ]
     },

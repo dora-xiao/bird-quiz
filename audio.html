@@ -7,7 +7,6 @@
     <title>Audio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
     <style>
-        /* ===== Base ===== */
         *,
         *::before,
         *::after {
@@ -95,7 +94,6 @@
             color: #5a5aba;
         }
 
-        /* ===== Settings Overlay ===== */
         #settings-page {
             position: fixed;
             inset: 0;
@@ -176,6 +174,7 @@
 <body>
 
     <i id="settingsBtn" class="fa-solid fa-gear fa-3x settings"></i>
+
     <div id="settings-page">
         <div class="settings-panel"></div>
     </div>
@@ -191,12 +190,16 @@
     <script>
         const BASE_URL = "https://dora-xiao.github.io/bird-quiz/";
         const GROUPS = ["group_1", "group_2"];
-        let tracks = [], groups = {}, currentTrack = null, revealed = false, openGroups = new Set(), settingsOpen = false;
 
+        let tracks = [];
+        let groups = {};            // { groupName: { birdKey: birdObj } }
+        let currentTrack = null;
+        let revealed = false;
+        let openGroups = new Set();
+        let settingsOpen = false;
         let queue = [];
         let recentHistory = [];
 
-        // Elements
         const settingsPage = document.getElementById("settings-page");
         const settingsBtn = document.getElementById("settingsBtn");
         const audio = document.getElementById("audio");
@@ -204,45 +207,53 @@
         const trackName = document.getElementById("trackName");
         const panel = settingsPage.querySelector(".settings-panel");
 
-        // ----- Persistence -----
+        /* ---------------- Persistence ---------------- */
+
         function saveSelections() {
             localStorage.setItem("birdSelections", JSON.stringify(groups));
         }
 
         function loadSelections() {
             const saved = localStorage.getItem("birdSelections");
-            if (saved) {
-                const parsed = JSON.parse(saved);
-                for (const g in parsed) {
-                    if (groups[g]) {
-                        groups[g].forEach((bird, i) => {
-                            if (parsed[g][i]) {
-                                bird.audios.forEach((a, j) => {
-                                    a.selected = parsed[g][i].audios[j].selected;
-                                });
-                            }
-                        });
-                    }
+            if (!saved) return;
+
+            const parsed = JSON.parse(saved);
+
+            for (const [groupName, birds] of Object.entries(groups)) {
+                if (!parsed[groupName]) continue;
+
+                for (const [birdKey, bird] of Object.entries(birds)) {
+                    if (!parsed[groupName][birdKey]) continue;
+
+                    bird.audios.forEach((audioObj, i) => {
+                        audioObj.selected =
+                            parsed[groupName][birdKey].audios[i]?.selected ?? false;
+                    });
                 }
             }
         }
 
-        // ----- Load tracks -----
+        /* ---------------- Load Data ---------------- */
+
         async function loadTracks() {
             for (const group of GROUPS) {
                 const res = await fetch(`${BASE_URL}${group}/audio_data.json`);
                 const data = await res.json();
-                groups[group] = Object.values(data);
+                groups[group] = data;   // KEEP OBJECT STRUCTURE
             }
+
             loadSelections();
             rebuildTracks();
             refreshSettings();
+
             revealBtn.disabled = false;
             revealBtn.textContent = "Reveal";
+
             pickRandomTrack(false);
         }
 
-        // ----- Shuffle helper -----
+        /* ---------------- Shuffle ---------------- */
+
         function shuffleArray(arr) {
             const copy = arr.slice();
             for (let i = copy.length - 1; i > 0; i--) {
@@ -252,11 +263,13 @@
             return copy;
         }
 
-        // ----- Build tracks list -----
+        /* ---------------- Build Tracks ---------------- */
+
         function rebuildTracks() {
             tracks = [];
+
             for (const [group, birds] of Object.entries(groups)) {
-                for (const bird of birds) {
+                for (const [birdKey, bird] of Object.entries(birds)) {
                     for (const a of bird.audios) {
                         if (a.selected) {
                             tracks.push({
@@ -271,10 +284,29 @@
                     }
                 }
             }
+
             queue = shuffleArray(tracks);
+
+            recentHistory = recentHistory.filter(r =>
+                tracks.some(t => t.src === r.src)
+            );
+
+            if (!tracks.length) {
+                audio.pause();
+                audio.src = "";
+                currentTrack = null;
+                return;
+            }
+
+            if (currentTrack && !tracks.some(t => t.src === currentTrack.src)) {
+                audio.pause();
+                currentTrack = null;
+                pickRandomTrack(false);
+            }
         }
 
-        // ----- Pick a random track (no repeats within 3) -----
+        /* ---------------- Pick Track ---------------- */
+
         function pickRandomTrack(autoplay = true) {
             if (!tracks.length) return;
 
@@ -283,17 +315,14 @@
                 queue = eligible.length ? shuffleArray(eligible) : shuffleArray(tracks);
             }
 
-            let next = queue.shift();
+            const next = queue.shift();
             currentTrack = next;
 
             audio.src = currentTrack.src;
             audio.load();
 
             if (autoplay) {
-                audio.play().catch(err => {
-                    console.error("Audio failed to play:", currentTrack.src, err);
-                    pickRandomTrack(true);
-                });
+                audio.play().catch(() => pickRandomTrack(true));
             }
 
             trackName.innerHTML = "";
@@ -304,16 +333,18 @@
             if (recentHistory.length > 3) recentHistory.shift();
         }
 
-        // ----- Reveal button -----
+        /* ---------------- Reveal ---------------- */
+
         revealBtn.addEventListener("click", () => {
             if (!currentTrack) return;
+
             if (!revealed) {
                 trackName.innerHTML = `
-                    <strong>${currentTrack.display_name}</strong>
-                    <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
-                    <div class="info">${currentTrack.location}</div>
-                    <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
-                `;
+            <strong>${currentTrack.display_name}</strong>
+            <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
+            <div class="info">${currentTrack.location}</div>
+            <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
+        `;
                 revealBtn.textContent = "Next";
                 revealed = true;
             } else {
@@ -322,12 +353,16 @@
         });
 
         function toTitleCase(str) {
-            return str.replace(/\w\S*/g, t => t[0].toUpperCase() + t.slice(1));
+            return str.replace(/\w\S*/g, t =>
+                t[0].toUpperCase() + t.slice(1).toLowerCase()
+            );
         }
 
-        // ----- Settings UI -----
+        /* ---------------- Settings UI ---------------- */
+
         function refreshSettings() {
             panel.querySelectorAll(".group-select").forEach(el => el.remove());
+
             for (const [groupName, birds] of Object.entries(groups)) {
                 const wrapper = document.createElement("div");
                 wrapper.className = "group-select";
@@ -339,23 +374,46 @@
                 const options = document.createElement("div");
                 options.className = "group-options";
                 if (openGroups.has(groupName)) options.style.display = "block";
+
                 header.onclick = () => {
                     const open = options.style.display === "block";
                     options.style.display = open ? "none" : "block";
                     open ? openGroups.delete(groupName) : openGroups.add(groupName);
-                }
+                };
 
-                options.appendChild(makeControl("Select all", () => { birds.forEach(b => b.audios.forEach(a => a.selected = true)); rebuildTracks(); saveSelections(); refreshSettings(); }));
-                options.appendChild(makeControl("Deselect all", () => { birds.forEach(b => b.audios.forEach(a => a.selected = false)); rebuildTracks(); saveSelections(); refreshSettings(); }));
+                options.appendChild(makeControl("Select all", () => {
+                    Object.values(birds).forEach(b =>
+                        b.audios.forEach(a => a.selected = true)
+                    );
+                    rebuildTracks();
+                    saveSelections();
+                    refreshSettings();
+                }));
 
-                birds.forEach(bird => {
+                options.appendChild(makeControl("Deselect all", () => {
+                    Object.values(birds).forEach(b =>
+                        b.audios.forEach(a => a.selected = false)
+                    );
+                    rebuildTracks();
+                    saveSelections();
+                    refreshSettings();
+                }));
+
+                for (const [birdKey, bird] of Object.entries(birds)) {
                     const selected = bird.audios.some(a => a.selected);
                     const opt = document.createElement("div");
                     opt.className = "option";
                     opt.innerHTML = `<i class="fa-${selected ? "solid" : "regular"} fa-square-check"></i>${bird.display_name}`;
-                    opt.onclick = () => { bird.audios.forEach(a => a.selected = !selected); rebuildTracks(); saveSelections(); refreshSettings(); }
+
+                    opt.onclick = () => {
+                        bird.audios.forEach(a => a.selected = !selected);
+                        rebuildTracks();
+                        saveSelections();
+                        refreshSettings();
+                    };
+
                     options.appendChild(opt);
-                });
+                }
 
                 wrapper.append(header, options);
                 panel.appendChild(wrapper);
@@ -370,7 +428,8 @@
             return div;
         }
 
-        // ----- Settings toggle -----
+        /* ---------------- Settings Toggle ---------------- */
+
         settingsBtn.addEventListener("click", () => {
             settingsOpen = !settingsOpen;
             settingsPage.style.display = settingsOpen ? "flex" : "none";
@@ -378,9 +437,11 @@
             settingsBtn.classList.toggle("fa-xmark", settingsOpen);
         });
 
-        // ----- Init -----
+        /* ---------------- Init ---------------- */
+
         loadTracks();
     </script>
+
 </body>
 
 </html>

@@ -108,10 +108,13 @@ BIRDS = {
         "Horned_Lark": "",
         "Snow_Bunting": "",
         "Redpoll": "",
+    },
+    "group_3": {
+        "...": "",
     }
 }
 
 if __name__ == "__main__":
-    data = scrape_audio_data(BIRDS, groups=["group_2"])
+    data = scrape_audio_data(BIRDS, groups=["group_3"])
     with open("data.json", "w") as f:
         json.dump(data, f, indent=4)

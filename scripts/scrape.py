@@ -110,7 +110,26 @@ BIRDS = {
         "Redpoll": "",
     },
     "group_3": {
-        "...": "",
+        "Barred_Owl": "",
+        "Sandhill_Crane": "",
+        "Yellow-billed_Cuckoo": "",
+        "Wood_Duck": "",
+        "Common_Merganser": "",
+        "American_Coot": "",
+        "Pied-billed_Grebe": "",
+        "Common_Loon": "",
+        "Broad-winged_Hawk": "",
+        "Eastern_Phoebe": "",
+        "Red-winged_Blackbird": "",
+        "Black-and-white_Warbler": "",
+        "Black-throated_Green_Warbler": "",
+        "Northern_Yellow_Warbler": "",
+        "Magnolia_Warbler": "",
+        "American_Tree_Sparrow": "",
+        "White-throated_Sparrow": "",
+        "White-crowned_Sparrow": "",
+        "Red-bellied_Woodpecker": "",
+        "Killdeer": "",
     }
 }
 

@@ -234,7 +234,8 @@
                         enabled: true,
                         display_name: bird.display_name,
                         group: group,
-                        src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${a.audio_index}.mp3`
+                        src: `${BASE_URL}${group}/audios/${bird.display_name.replace(/ /g, "_")}_${a.audio_index}.mp3`,
+                        number: a.audio_index
                     }))
                 }));
             }
@@ -299,6 +300,7 @@
             <div class="info">${toTitleCase(currentTrack.audio_type)}</div>
             <div class="info">${currentTrack.location_timestamp}</div>
             <a href="${currentTrack.credit_link}" target="_blank">${currentTrack.credit}</a>
+            <div class="info">Track ${currentTrack.number}</div>
         `;
                 revealBtn.textContent = "Next";
                 revealed = true;

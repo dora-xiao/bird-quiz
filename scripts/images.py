@@ -1,7 +1,7 @@
 import os
 import json
 
-folders = ["group_1", "group_2", "group_3"]
+folders = ["group_1", "group_2", "group_3", "group_4"]
 
 for folder in folders:
     images_path = os.path.join(folder, "images")

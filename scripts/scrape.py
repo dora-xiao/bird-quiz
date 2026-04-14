@@ -146,10 +146,32 @@ BIRDS = {
         "Blue-winged_Warbler": "",
         "Yellow-rumped_Warbler": "",
         "Blackpoll_Warbler": "",
+    },
+    "group_5": {
+        "Peregrine_Falcon": "", 
+        "Eastern_Screech-Owl": "", 
+        "Hooded_Merganser": "", 
+        "Northern_Pintail": "", 
+        "American_Herring_Gull": "", 
+        "Ruffed_Grouse": "", 
+        "Eastern_Wood-Pewee": "", 
+        "Eastern_Kingbird" :"", 
+        "Northern_Shrike": "", 
+        "Northern_Cardinal": "", 
+        "Scarlet_Tanager": "",
+        "Rose-breasted_Grosbeak" :"", 
+        "Chipping_Sparrow": "",
+        "Ruby-crowned_Kinglet": "",
+        "Brown-headed_Cowbird": "", 
+        "Carolina_Wren" :"", 
+        "White-breasted_Nuthatch": "",
+        "Red-breasted_Nuthatch": "", 
+        "Pine_Warbler": "", 
+        "Prairie_Warbler": ""
     }
 }
 
 if __name__ == "__main__":
-    data = scrape_audio_data(BIRDS, groups=["group_4"])
+    data = scrape_audio_data(BIRDS, groups=["group_5"])
     with open("data.json", "w") as f:
         json.dump(data, f, indent=4)

@@ -212,7 +212,7 @@
                 "link": "https://www.allaboutbirds.org/guide/assets/sound/549020.mp3",
                 "credit_link": "https://macaulaylibrary.org/audio/166801111",
                 "credit": "Recorded by Parker Davis / Macaulay Library",
-                "selected": valse
+                "selected": false
             },
             {
                 "audio_index": 4,
